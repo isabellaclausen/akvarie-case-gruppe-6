@@ -1,0 +1,16 @@
+body {
+    background-image: url("../img/baggrund-akvarie.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+
+
+.krabbe {
+  position: absolute;
+  width: 190px;   /* gør krabben mindre */
+  bottom: -15px;   /* flytter den ned */
+  right: 410px;   /* flytter den hen mod stenen */
+}
+}
