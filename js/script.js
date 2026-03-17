@@ -9,6 +9,28 @@ krabbe.addEventListener("click", () => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Glimmer når man trykker på muslingen //
 
 const musling = document.getElementById("musling");
