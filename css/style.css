@@ -229,11 +229,21 @@ body {
 
   }
 
-   .stribet-fisk {
- position: relative;
-  width: 150px;   
-  top: 45px;      
-  left: 150px;  
+stribet-fisk {
+position: relative;
+  width: 190px;   
+  top: 100px;      
+  left: 100px; 
 
   }
+
+.skattekiste {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 190px;
+}
+
+
+
 
