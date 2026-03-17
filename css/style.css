@@ -14,6 +14,7 @@ body {
    --off-søhest: 200px; 
    --off-stribetfisk: 200px; 
    --off-blå-fisk: 200px; 
+   --off-barbie-fisk: 200px; 
 }
 
 
@@ -40,6 +41,25 @@ body {
   width: 190px;   
   top: 100px;      
   left: 100px;    
+}
+
+ .barbie-fisk {
+  position: absolute;
+  right: 500px;
+  top: 300px;
+  width: 120px;
+  cursor: pointer;
+  animation: barbie-fisk 12s linear infinite;
+  left: 100vw;
+}
+
+@keyframes barbie-fisk {
+  0% {
+    transform: translateX(0); /* Start udenfor højre side */
+  }
+  100% {
+    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+  }
 }
 
 
@@ -274,13 +294,7 @@ body {
 
 
 
-  .barbie-fisk {
-  position: absolute;
-  bottom: 15px;
-  right: 500px;
-  top: 300px;
-  width: 120px;
-  }
+ 
 
 
 
