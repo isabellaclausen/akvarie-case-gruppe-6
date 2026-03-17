@@ -240,6 +240,26 @@ body {
 
   }
 
+<<<<<<< HEAD
+stribet-fisk {
+position: relative;
+  width: 190px;   
+  top: 100px;      
+  left: 100px; 
+
+  }
+
+.skattekiste {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 190px;
+}
+
+
+
+
+=======
   .barbie-fisk {
   position: absolute;
   bottom: 15px;
@@ -320,3 +340,4 @@ body {
 }
 
  
+>>>>>>> e1df0a76a2429df83f8bdb98f3ee1aedd7b6184c
