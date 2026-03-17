@@ -169,5 +169,14 @@ body {
     left: 50px;
     position: absolute;
   }
+
+  .havfrue-vinker {
+  position: absolute;
+  bottom: 5px; 
+  top: 295px; 
+  right: 120px;
+  width: 400px;
+  z-index: 2; /* foran stenen */
+  }
   
 
