@@ -50,13 +50,6 @@ left: 75;
   left: 200px;     
 }
 
-.seahorse {
-  position: absolute;
-  width: 100px;
-  bottom: 20%;
-  left: 10%;
-}
-
 
 /* Scene container */
 .scene {
@@ -162,7 +155,12 @@ body {
 }
 
 
-
+/* Scene container */
+.scene {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
 
 
