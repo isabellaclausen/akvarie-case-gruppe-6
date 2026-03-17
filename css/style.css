@@ -121,8 +121,21 @@ body {
   width: 190px;
   cursor: pointer;
   display: block;
+  
 }
 
+.tang
+  {
+    width: 190px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .koral-bl {
+    width: 100px;
+    cursor: pointer;
+    display: block;
+  }
   
 
 
