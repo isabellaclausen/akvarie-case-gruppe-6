@@ -159,8 +159,8 @@ body {
 .ufærdig-musling {
   width: 110px;           
   position: absolute;     
-  bottom: 10px;           
-  left: 700px;             
+  bottom: -2%;           
+  left: 620px;             
   cursor: pointer;        
 }
 
@@ -220,4 +220,12 @@ body {
   z-index: 2; /* foran stenen */
   }
 
+  .sostjerne {
+  position: absolute;
+  bottom: 90px;
+  right: 100px;
+  width: 75px;
+  height: 75px;
+
+  }
 
