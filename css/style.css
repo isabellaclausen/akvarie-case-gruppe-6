@@ -41,7 +41,7 @@ body {
   left: 200px;     
 }
 
-.seahorse {
+.søhest {
   position: absolute; 
   width: 100px; 
   bottom: 30%; 
@@ -157,8 +157,8 @@ body {
 .ufærdig-musling {
   width: 110px;           
   position: absolute;     
-  bottom: 10px;           
-  left: 700px;             
+  bottom: -2%;           
+  left: 620px;             
   cursor: pointer;        
 }
 
@@ -206,10 +206,13 @@ body {
   position: absolute;
   }
 
+
+/* Havfruen */
+
   .havfrue-vinker {
   position: absolute;
   bottom: 5px; 
-  top: 295px; 
+  top: 340px; 
   right: 120px;
   width: 400px;
   z-index: 2; /* foran stenen */
