@@ -130,14 +130,6 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
 /* guldfisken og den blå fisk */
 
 .guldfisk {
@@ -162,18 +154,6 @@ body {
   overflow: hidden;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Baggrund */
 body {
     background-image: url("../img/baggrund-akvarie.png");
@@ -183,12 +163,6 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-
-
-
-
-
-
 
 /* musling med glimmer */
 
@@ -224,24 +198,24 @@ body {
 
 }
 
-.tang
+ .tang
   {
-    width: 290px;
-    cursor: pointer;
-    display: block;
-    bottom: 5px;
-    left: 200px;
-    position: absolute;
+  width: 290px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  left: 200px;
+  position: absolute;
 
   }
 
   .koral-bl {
-    width: 120px;
-    cursor: pointer;
-    display: block;
-    bottom: 5px;
-    left: 50px;
-    position: absolute;
+  width: 120px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  left: 50px;
+  position: absolute;
   }
 
   .havfrue-vinker {
@@ -253,14 +227,13 @@ body {
   z-index: 2; /* foran stenen */
   }
 
-.sostjerne
-{
-width: 75;
-    cursor: pointer;
-    display: block;
-    bottom: 5px;
-    right: 100px;
-    position: absolute;
+.sostjerne{
+  width: 75px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  right: 100px;
+  position: absolute;
 }
   
 
