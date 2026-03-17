@@ -28,13 +28,6 @@ body {
   display: block;
 }
 
-.sostjerne {
-position: relative;
-width: 75px;
-top: 75;
-left: 75;
-
-}
 
 .guldfisk {
   position: relative;
@@ -255,7 +248,7 @@ body {
 
 .sostjerne
 {
-width: 75;
+width: 25;
     cursor: pointer;
     display: block;
     bottom: 5px;
