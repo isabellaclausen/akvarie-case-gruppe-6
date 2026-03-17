@@ -213,10 +213,13 @@ body {
   position: absolute;
   }
 
+
+/* Havfruen */
+
   .havfrue-vinker {
   position: absolute;
   bottom: 5px; 
-  top: 295px; 
+  top: 340px; 
   right: 120px;
   width: 400px;
   z-index: 2; /* foran stenen */
