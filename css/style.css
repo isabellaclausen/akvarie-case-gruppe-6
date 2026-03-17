@@ -13,4 +13,19 @@ body {
   bottom: -15px;   /* flytter den ned */
   right: 410px;   /* flytter den hen mod stenen */
 }
+
+.guldfisk {
+  position: relative;
+  width: 190px;   
+  top: 100px;      
+  left: 100px;    
+}
+
+.blå-fisk {
+  position: relative;
+  width: 120px;   
+  top: 150px;      
+  left: 200px;     
+}
+
 }
