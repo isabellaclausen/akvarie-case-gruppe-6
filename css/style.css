@@ -28,13 +28,14 @@ body {
   display: block;
 }
 
+
 .sostjerne {
 position: relative;
 width: 75px;
 top: 75;
 left: 75;
-
 }
+
 
 .guldfisk {
   position: relative;
@@ -48,6 +49,13 @@ left: 75;
   width: 120px;   
   top: 150px;      
   left: 200px;     
+}
+
+.seahorse {
+  position: absolute; 
+  width: 100px; 
+  bottom: 30%; 
+  left: 10%; 
 }
 
 
@@ -235,6 +243,13 @@ body {
   right: 100px;
   position: absolute;
 }
-  
+.sostjerne
+{
+width: 25;
+    cursor: pointer;
+    display: block;
+    bottom: 5px;
+    right: 100px;
+    position: absolute;
 
-
+}
