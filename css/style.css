@@ -221,7 +221,6 @@ body {
 
 
 /* Havfruen */
-
   .havfrue-vinker {
   position: absolute;
   bottom: 5px; 
@@ -240,7 +239,6 @@ body {
 
   }
 
-<<<<<<< HEAD
 stribet-fisk {
 position: relative;
   width: 190px;   
@@ -259,7 +257,7 @@ position: relative;
 
 
 
-=======
+
   .barbie-fisk {
   position: absolute;
   bottom: 15px;
@@ -339,5 +337,21 @@ position: relative;
   }
 }
 
+.skygger-fisk {
+  position: absolute;
+  width: 500px;   
+  top: 300px;      
+  left: 180px;     
+  opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
+}
+
+.skygger-fisk2 {
+  position: absolute;
+  width: 500px;   
+  bottom: 60px;     
+  left: 600px;    
+  opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
+}
+
+
  
->>>>>>> e1df0a76a2429df83f8bdb98f3ee1aedd7b6184c
