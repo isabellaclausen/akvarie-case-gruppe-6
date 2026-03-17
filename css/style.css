@@ -9,9 +9,6 @@ body {
 }
 
 
-
-
-
 /* Krabben - bliver i den position du har valgt */
 .krabbe {
   position: absolute;
@@ -26,13 +23,6 @@ body {
   width: 190px;
   cursor: pointer;
   display: block;
-}
-
-.sostjerne {
-position: relative;
-width: 75px;
-top: 75;
-left: 75;
 }
 
 .guldfisk {
@@ -64,16 +54,7 @@ left: 75;
   overflow: hidden;
 }
 
-/* Baggrund */
-body {
-    background-image: url("../img/baggrund-akvarie.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
 
-}
 
 /* Container der holder krabbe og taleboble sammen */
 .krabbe-wrap {
@@ -84,7 +65,6 @@ body {
 }
 
 /* Taleboble */
-
 .tooltip {
   position: absolute;
   bottom: 110px;
@@ -135,68 +115,6 @@ body {
   border-color: white transparent transparent transparent;
 
 }
-
-
-
-
-
-
-
-
-
-/* guldfisken og den blå fisk */
-
-.guldfisk {
-  position: relative;
-  width: 190px;   
-  top: 100px;      
-  left: 100px;    
-}
-
-.blå-fisk {
-  position: relative;
-  width: 120px;   
-  top: 150px;      
-  left: 200px;     
-}
-
-
-/* Scene container */
-.scene {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Baggrund */
-body {
-    background-image: url("../img/baggrund-akvarie.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-}
-
-
-
-
-
-
 
 /* musling med glimmer */
 
