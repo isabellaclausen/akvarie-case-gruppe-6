@@ -51,6 +51,7 @@ body {
   cursor: pointer;
   animation: barbie-fisk 12s linear infinite;
   left: 100vw;
+  z-index: 1;
 }
 
 @keyframes barbie-fisk {
@@ -352,7 +353,6 @@ body {
   top: 300px;      
   left: 180px;     
   opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
-  z-index: 1; /* sørger for at skyggen er bagved de andre elementer */
 }
 
 .skygger-fisk2 {
