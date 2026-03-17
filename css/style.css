@@ -15,6 +15,7 @@ body {
    --off-stribetfisk: 200px; 
    --off-blå-fisk: 200px; 
    --off-barbie-fisk: 200px; 
+   --off-guldfisk: 200px; 
 }
 
 
@@ -37,11 +38,23 @@ body {
 
 
 .guldfisk {
-  position: relative;
+  position: absolute;
   width: 190px;   
-  top: 100px;      
-  left: 100px;    
+  top: 100px;        
+  cursor: pointer;
+  animation: guldfisk 10s linear infinite;
+  left: 100vw;
 }
+
+@keyframes guldfisk {
+  0% {
+    transform: translateX(0); /* Start udenfor højre side */
+  }
+  100% {
+    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+  }
+}
+
 
  .barbie-fisk {
   position: absolute;
@@ -67,6 +80,7 @@ body {
   position: absolute;
   width: 120px;
   top: 150px;
+ 
   cursor: pointer;
   animation: blå-fisk 12s linear infinite;
   left: 100vw;
