@@ -1,6 +1,5 @@
-
-
 "use strict";
+
 const crab = document.getElementById("krabbe");
 const crabTooltip = document.getElementById("krabbeTooltip");
 
@@ -71,4 +70,41 @@ musling.addEventListener("click", () => {
     }, 800);
   }
 });
+
+
+
+// Boblen + får den til at sprøjte //
+const bobbel = document.getElementById("bobbel");
+
+bobbel.addEventListener("click", popbobbel);
+
+function popbobbel() {
+  if (bobbel.classList.contains("pop")) return;
+
+  const rect = bobbel.getBoundingClientRect();
+
+  bobbel.classList.add("pop");
+
+  for (let i = 0; i < 15; i++) {
+    const p = document.createElement("div");
+    p.className = "particle";
+
+    const angle = Math.random() * Math.PI * 2;
+    const distance = 40 + Math.random() * 40;
+
+    p.style.left = rect.left + rect.width / 2 + "px";
+    p.style.top = rect.top + rect.height / 2 + "px";
+
+    p.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
+    p.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
+
+    document.body.appendChild(p);
+
+    p.addEventListener("animationend", () => p.remove());
+  }
+
+  bobbel.addEventListener("animationend", () => {
+    bobbel.style.display = "none";
+  }, { once: true });
+}
 
