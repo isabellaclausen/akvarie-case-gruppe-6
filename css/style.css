@@ -161,16 +161,6 @@ body {
   overflow: hidden;
 }
 
-/* Baggrund */
-body {
-    background-image: url("../img/baggrund-akvarie.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-}
-
 /* musling med glimmer */
 
 .ufærdig-musling {
