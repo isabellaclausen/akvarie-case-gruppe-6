@@ -1,3 +1,4 @@
+/* Baggrund til hele siden */
 body {
     background-image: url("../img/baggrund-akvarie.png");
     background-size: cover;
@@ -5,13 +6,14 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
+}
 
-
+/* Krabben - bliver i den position du har valgt */
 .krabbe {
   position: absolute;
-  width: 190px;   /* gør krabben mindre */
-  bottom: -15px;   /* flytter den ned */
-  right: 410px;   /* flytter den hen mod stenen */
+  width: 190px;   /* størrelse på krabben */
+  bottom: -15px;  /* hvor tæt på bunden */
+  right: 410px;   /* hvor tæt på højre side */
 }
 
 .guldfisk {
@@ -27,5 +29,89 @@ body {
   top: 150px;      
   left: 200px;     
 }
+
+
+/* Scene container */
+.scene {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Baggrund */
+body {
+    background-image: url("../img/baggrund-akvarie.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container der holder krabbe og taleboble sammen */
+.krabbe-wrap {
+  position: absolute;
+  bottom: -15px;
+  right: 410px;
+  width: fit-content; /* gør containeren kun så bred som krabben */
+}
+
+/* Krabben */
+.krabbe {
+  width: 190px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Taleboble */
+
+.tooltip {
+  position: absolute;
+  bottom: 110px;
+  left: 56%;
+  transform: translateX(-50%);
+
+  background: #cfefff; /* lys blå boble */
+  color: #0b3d5c;
+
+  padding: 16px 20px;
+  border-radius: 30px; /* mere rund */
+
+  font-family: 'fredoka', sans-serif;
+  font-size: 20px; /* større tekst til små børn */
+  font-weight: 600;
+
+  text-align: center;
+  max-width: 240px;
+
+  border: 4px solid #8dd9ff;
+
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.tooltip.is-visible {
+  opacity: 1;
+}
+
+
+/* Når JavaScript viser den */
+.tooltip.is-visible {
+  opacity: 1;
+}
+
+/* Lille trekant under taleboblen */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-width: 12px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
 
 }
