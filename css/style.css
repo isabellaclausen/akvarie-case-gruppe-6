@@ -178,7 +178,11 @@ body {
     position: absolute;
   }
 
-
-  .s
-  
-
+.sostjerne {
+width: 50;
+    cursor: pointer;
+    display: block;
+    bottom: 10px;
+    right: 90px;
+    position: absolute;
+}
