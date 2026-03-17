@@ -13,6 +13,8 @@ body {
   /* start/exit offset */
    --off-søhest: 200px; 
    --off-stribetfisk: 200px; 
+   --off-blå-fisk: 200px; 
+   --off-barbie-fisk: 200px; 
 }
 
 
@@ -41,11 +43,42 @@ body {
   left: 100px;    
 }
 
+ .barbie-fisk {
+  position: absolute;
+  right: 500px;
+  top: 300px;
+  width: 120px;
+  cursor: pointer;
+  animation: barbie-fisk 12s linear infinite;
+  left: 100vw;
+}
+
+@keyframes barbie-fisk {
+  0% {
+    transform: translateX(0); /* Start udenfor højre side */
+  }
+  100% {
+    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+  }
+}
+
+
 .blå-fisk {
-  position: relative;
-  width: 120px;   
-  top: 150px;      
-  left: 200px;     
+  position: absolute;
+  width: 120px;
+  top: 150px;
+  cursor: pointer;
+  animation: blå-fisk 12s linear infinite;
+  left: 100vw;
+}
+
+@keyframes blå-fisk {
+  0% {
+    transform: translateX(0); /* Start udenfor højre side */
+  }
+  100% {
+    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+  }
 }
 
 
@@ -67,6 +100,29 @@ body {
     transform: translateX(0) rotateY(180deg);
   }
   100% { transform: translateX(calc(100vw + var(--off-søhest))) rotateY(180deg); }
+}
+
+
+.stribetfisk {
+  position: absolute;
+  width: 140px;   
+  top: 45px;      
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+
+  left: calc(-1 * var(--off-stribetfisk)); /* start udenfor venstre */
+  animation: stribetfisk 15s linear infinite;
+}
+
+
+@keyframes stribetfisk {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(calc(100vw + var(--off-stribetfisk) + 140px));
+  }
 }
 
 
@@ -141,21 +197,7 @@ body {
 
 }
 
-/* guldfisken og den blå fisk */
 
-.guldfisk {
-  position: relative;
-  width: 190px;   
-  top: 100px;      
-  left: 100px;    
-}
-
-.blå-fisk {
-  position: relative;
-  width: 120px;   
-  top: 150px;      
-  left: 200px;     
-}
 
 
 /* Scene container */
@@ -252,13 +294,7 @@ body {
 
 
 
-  .barbie-fisk {
-  position: absolute;
-  bottom: 15px;
-  right: 500px;
-  top: 300px;
-  width: 120px;
-  }
+ 
 
 
 
@@ -309,27 +345,6 @@ body {
 }
 
 
-.stribetfisk {
-  position: absolute;
-  width: 140px;   
-  top: 45px;      
-  cursor: pointer;
-  display: block;
-  z-index: 1;
-
-  left: calc(-1 * var(--off-stribetfisk)); /* start udenfor venstre */
-  animation: stribetfisk 15s linear infinite;
-}
-
-
-@keyframes stribetfisk {
-  0% {
-    transform: translateX(0); 
-  }
-  100% {
-    transform: translateX(calc(100vw + var(--off-stribetfisk) + 140px));
-  }
-}
 
 .skygger-fisk {
   position: absolute;
