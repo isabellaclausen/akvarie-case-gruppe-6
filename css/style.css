@@ -252,14 +252,13 @@ body {
   right: 500px;
   top: 300px;
   width: 120px;
-
- .stribet-fisk {
- position: relative;
- width: 150px;   
- top: 45px;      
- left: 150px;  
-
-
   }
-}
 
+  .stribetfisk {
+  position: absolute;
+  width: 140px;   
+  top: 45px;      
+  left: 150px;  
+  }
+
+ 
