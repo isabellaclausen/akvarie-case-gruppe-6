@@ -229,7 +229,6 @@ body {
 
   }
 
-
   .barbie-fisk {
   position: absolute;
   bottom: 15px;
@@ -237,11 +236,11 @@ body {
   top: 300px;
   width: 120px;
 
-   .stribet-fisk {
+ .stribet-fisk {
  position: relative;
-  width: 150px;   
-  top: 45px;      
-  left: 150px;  
+ width: 150px;   
+ top: 45px;      
+ left: 150px;  
 
 
   }
