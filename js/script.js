@@ -71,3 +71,40 @@ musling.addEventListener("click", () => {
   }
 });
 
+
+
+// Boblen + får den til at sprøjte //
+const bubble = document.getElementById("bubble");
+
+bubble.addEventListener("click", popBubble);
+
+function popBubble() {
+  if (bubble.classList.contains("pop")) return;
+
+  const rect = bubble.getBoundingClientRect();
+
+  bubble.classList.add("pop");
+
+  for (let i = 0; i < 15; i++) {
+    const p = document.createElement("div");
+    p.className = "particle";
+
+    const angle = Math.random() * Math.PI * 2;
+    const distance = 40 + Math.random() * 40;
+
+    p.style.left = rect.left + rect.width / 2 + "px";
+    p.style.top = rect.top + rect.height / 2 + "px";
+
+    p.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
+    p.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
+
+    document.body.appendChild(p);
+
+    p.addEventListener("animationend", () => p.remove());
+  }
+
+  bubble.addEventListener("animationend", () => {
+    bubble.style.display = "none";
+  }, { once: true });
+}
+
