@@ -147,6 +147,7 @@ body {
     opacity: 0;
     transform: translate(var(--x), var(--y)) scale(0.3);
   }
+}
 
 .tang
   {
