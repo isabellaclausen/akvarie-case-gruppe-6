@@ -78,7 +78,7 @@ const bobbel = document.getElementById("bobbel");
 
 bobbel.addEventListener("click", popbobbel);
 
-spawnBobbel();
+spawnbobbel();
 
 function popbobbel() {
   if (bobbel.classList.contains("pop")) return;
