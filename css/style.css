@@ -33,7 +33,6 @@ position: relative;
 width: 75px;
 top: 75;
 left: 75;
-
 }
 
 .guldfisk {
@@ -48,6 +47,13 @@ left: 75;
   width: 120px;   
   top: 150px;      
   left: 200px;     
+}
+
+.seahorse {
+  position: absolute; 
+  width: 100px; 
+  bottom: 30%; 
+  left: 10%; 
 }
 
 
