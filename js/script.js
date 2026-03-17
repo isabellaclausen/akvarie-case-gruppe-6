@@ -78,6 +78,8 @@ const bobbel = document.getElementById("bobbel");
 
 bobbel.addEventListener("click", popbobbel);
 
+spawnBobbel();
+
 function popbobbel() {
   if (bobbel.classList.contains("pop")) return;
 
@@ -102,8 +104,28 @@ function popbobbel() {
     p.addEventListener("animationend", () => p.remove());
   }
 
-  bobbel.addEventListener("animationend", () => {
-    bobbel.style.display = "none";
-  }, { once: true });
+  bobbel.addEventListener(
+    "animationend",
+    () => {
+      bobbel.style.display = "none";
+
+      setTimeout(() => {
+        bobbel.classList.remove("pop");
+        bobbel.style.display = "block";
+        spawnBobbel();
+      }, 1000);
+    },
+    { once: true }
+  );
 }
 
+function spawnBobbel() {
+  const maxX = window.innerWidth - bobbel.offsetWidth;
+  const maxY = window.innerHeight - bobbel.offsetHeight;
+
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
+
+  bobbel.style.left = `${randomX}px`;
+  bobbel.style.top = `${randomY}px`;
+}
