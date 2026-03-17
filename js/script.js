@@ -104,19 +104,20 @@ function popbobbel() {
     p.addEventListener("animationend", () => p.remove());
   }
 
-  bobbel.addEventListener("animationend", () => {
-    bobbel.style.display = "none";
-  }, { once: true });
-}
+  bobbel.addEventListener(
+    "animationend",
+    () => {
+      bobbel.style.display = "none";
 
-setTimeout(() => {
+      setTimeout(() => {
         bobbel.classList.remove("pop");
-        spawnBobbel();
         bobbel.style.display = "block";
+        spawnBobbel();
       }, 1000);
-    
+    },
     { once: true }
-  
+  );
+}
 
 function spawnBobbel() {
   const maxX = window.innerWidth - bobbel.offsetWidth;
@@ -128,4 +129,3 @@ function spawnBobbel() {
   bobbel.style.left = `${randomX}px`;
   bobbel.style.top = `${randomY}px`;
 }
-

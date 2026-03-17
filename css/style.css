@@ -301,11 +301,10 @@ body {
 /* boblen  */
 
 .bobbel {
-  width: 120px;              
+  width: 160px;
   display: block;
   cursor: pointer;
-
-  position: absolute;        /* fjerner den fra layout */
+  position: absolute;
   top: 300px;
   left: 100px;
 }
@@ -328,7 +327,7 @@ body {
 
 /* små "sprøjt" */
 .particle {
-  position: absolute;
+  position: fixed;
   width: 6px;
   height: 6px;
   background: lightblue;
