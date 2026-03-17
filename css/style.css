@@ -41,14 +41,31 @@ body {
   left: 200px;     
 }
 
+/* variabler */
+  :root {
+  /* start/exit offset */
+   --off-søhest: 200px; 
+}
+
 .søhest {
   position: absolute; 
-  width: 100px; 
+  width: 70px; 
   bottom: 30%; 
-  left: 10%; 
   cursor: pointer;
   display: block;
+  z-index: 1;
+
+  right: calc(100vw + var(--off-søhest)); /* start ude til venstre*/
+  animation: søhest 18s linear infinite;
 }
+
+@keyframes søhest {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+  100% { transform: translateX(calc(100vw + var(--off-søhest))) rotateY(180deg); }
+}
+
 
 
 /* Scene container */

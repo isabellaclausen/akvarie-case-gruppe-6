@@ -1,6 +1,5 @@
-
-
 "use strict";
+
 const crab = document.getElementById("krabbe");
 const crabTooltip = document.getElementById("krabbeTooltip");
 
