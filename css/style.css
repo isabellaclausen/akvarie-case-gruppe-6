@@ -227,7 +227,7 @@ body {
   cursor: pointer;
   display: block;
   bottom: 5px;
-  left: 200px;
+  left: 265px;
   position: absolute;
 
   }
@@ -237,13 +237,12 @@ body {
   cursor: pointer;
   display: block;
   bottom: 5px;
-  left: 50px;
+  left: 2px;
   position: absolute;
   }
 
 
 /* Havfruen */
-
   .havfrue-vinker {
   position: absolute;
   bottom: 5px; 
@@ -261,6 +260,19 @@ body {
   height: 75px;
 
   }
+
+
+.skattekiste {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+}
+
+
+
+
+
 
   .barbie-fisk {
   position: absolute;
@@ -280,7 +292,7 @@ body {
   cursor: pointer;
 
   position: absolute;        /* fjerner den fra layout */
-  top: 100px;
+  top: 300px;
   left: 100px;
 }
 
@@ -318,6 +330,23 @@ body {
   }
 }
 
+
+
+.skygger-fisk {
+  position: absolute;
+  width: 500px;   
+  top: 300px;      
+  left: 180px;     
+  opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
+}
+
+.skygger-fisk2 {
+  position: absolute;
+  width: 500px;   
+  bottom: 60px;     
+  left: 600px;    
+  opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
+}
 
 
  

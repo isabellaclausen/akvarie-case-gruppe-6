@@ -74,16 +74,16 @@ musling.addEventListener("click", () => {
 
 
 // Boblen + får den til at sprøjte //
-const bubble = document.getElementById("bubble");
+const bobbel = document.getElementById("bobbel");
 
-bubble.addEventListener("click", popBubble);
+bobbel.addEventListener("click", popbobbel);
 
-function popBubble() {
-  if (bubble.classList.contains("pop")) return;
+function popbobbel() {
+  if (bobbel.classList.contains("pop")) return;
 
-  const rect = bubble.getBoundingClientRect();
+  const rect = bobbel.getBoundingClientRect();
 
-  bubble.classList.add("pop");
+  bobbel.classList.add("pop");
 
   for (let i = 0; i < 15; i++) {
     const p = document.createElement("div");
@@ -99,12 +99,11 @@ function popBubble() {
     p.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
 
     document.body.appendChild(p);
-
     p.addEventListener("animationend", () => p.remove());
   }
 
-  bubble.addEventListener("animationend", () => {
-    bubble.style.display = "none";
+  bobbel.addEventListener("animationend", () => {
+    bobbel.style.display = "none";
   }, { once: true });
 }
 
