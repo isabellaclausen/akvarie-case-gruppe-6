@@ -157,8 +157,8 @@ body {
 .ufærdig-musling {
   width: 110px;           
   position: absolute;     
-  bottom: 10px;           
-  left: 700px;             
+  bottom: -2%;           
+  left: 620px;             
   cursor: pointer;        
 }
 
