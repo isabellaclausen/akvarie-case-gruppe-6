@@ -25,6 +25,15 @@ body {
   display: block;
 }
 
+
+.sostjerne {
+position: relative;
+width: 75px;
+top: 75;
+left: 75;
+}
+
+
 .guldfisk {
   position: relative;
   width: 190px;   
@@ -116,6 +125,40 @@ body {
 
 }
 
+/* guldfisken og den blå fisk */
+
+.guldfisk {
+  position: relative;
+  width: 190px;   
+  top: 100px;      
+  left: 100px;    
+}
+
+.blå-fisk {
+  position: relative;
+  width: 120px;   
+  top: 150px;      
+  left: 200px;     
+}
+
+
+/* Scene container */
+.scene {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Baggrund */
+body {
+    background-image: url("../img/baggrund-akvarie.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
 /* musling med glimmer */
 
 .ufærdig-musling {
@@ -150,24 +193,24 @@ body {
 
 }
 
-.tang
+ .tang
   {
-    width: 290px;
-    cursor: pointer;
-    display: block;
-    bottom: 5px;
-    left: 200px;
-    position: absolute;
+  width: 290px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  left: 200px;
+  position: absolute;
 
   }
 
   .koral-bl {
-    width: 120px;
-    cursor: pointer;
-    display: block;
-    bottom: 5px;
-    left: 50px;
-    position: absolute;
+  width: 120px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  left: 50px;
+  position: absolute;
   }
 
   .havfrue-vinker {
@@ -179,15 +222,21 @@ body {
   z-index: 2; /* foran stenen */
   }
 
+.sostjerne{
+  width: 75px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  right: 100px;
+  position: absolute;
+}
 .sostjerne
 {
-width: 75;
+width: 25;
     cursor: pointer;
     display: block;
     bottom: 5px;
     right: 100px;
     position: absolute;
+
 }
-  
-
-
