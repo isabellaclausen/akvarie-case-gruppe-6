@@ -99,7 +99,6 @@ function popbobbel() {
     p.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
 
     document.body.appendChild(p);
-
     p.addEventListener("animationend", () => p.remove());
   }
 
