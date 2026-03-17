@@ -147,8 +147,19 @@ body {
     opacity: 0;
     transform: translate(var(--x), var(--y)) scale(0.3);
   }
-}
 
+.tang
+  {
+    width: 190px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .koral-bl {
+    width: 100px;
+    cursor: pointer;
+    display: block;
+  }
   
 
 
