@@ -229,3 +229,11 @@ body {
 
   }
 
+  .barbie-fisk {
+  position: absolute;
+  bottom: 15px;
+  right: 500px;
+  top: 300px;
+  width: 120px;
+  }
+
