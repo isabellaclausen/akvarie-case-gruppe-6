@@ -222,21 +222,4 @@ body {
   z-index: 2; /* foran stenen */
   }
 
-.sostjerne{
-  width: 75px;
-  cursor: pointer;
-  display: block;
-  bottom: 5px;
-  right: 100px;
-  position: absolute;
-}
-.sostjerne
-{
-width: 25;
-    cursor: pointer;
-    display: block;
-    bottom: 5px;
-    right: 100px;
-    position: absolute;
 
-}
