@@ -152,17 +152,17 @@ body {
 
 .tang
   {
-    width: 190px;
+    width: 290px;
     cursor: pointer;
     display: block;
     bottom: 5px;
-    left: 150px;
+    left: 200px;
     position: absolute;
 
   }
 
   .koral-bl {
-    width: 100px;
+    width: 120px;
     cursor: pointer;
     display: block;
     bottom: 5px;
