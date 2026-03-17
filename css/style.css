@@ -116,11 +116,37 @@ body {
 
 }
 
-/* musling */
+/* musling med glimmer */
+
 .ufærdig-musling {
-  width: 190px;
-  cursor: pointer;
-  display: block;
+  width: 110px;           
+  position: absolute;     
+  bottom: 10px;           
+  left: 700px;             
+  cursor: pointer;        
+}
+
+/* Glimmeret */
+.glimmer {
+  position: fixed;       
+  width: 12px;
+  height: 12px;
+  background: gold;       
+  border-radius: 50%; 
+  
+  animation: sparkle 0.8s ease-out forwards;
+}
+
+/* Animation der får glimmer til at flyve ud og fade */
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) scale(0.3);
+  }
 }
 
   
