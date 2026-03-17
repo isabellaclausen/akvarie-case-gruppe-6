@@ -155,12 +155,19 @@ body {
     width: 190px;
     cursor: pointer;
     display: block;
+    bottom: 5px;
+    left: 150px;
+    position: absolute;
+
   }
 
   .koral-bl {
     width: 100px;
     cursor: pointer;
     display: block;
+    bottom: 5px;
+    left: 50px;
+    position: absolute;
   }
   
 
