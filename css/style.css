@@ -26,13 +26,6 @@ body {
 }
 
 
-.sostjerne {
-position: relative;
-width: 75px;
-top: 75;
-left: 75;
-}
-
 
 .guldfisk {
   position: relative;
@@ -48,7 +41,7 @@ left: 75;
   left: 200px;     
 }
 
-.seahorse {
+.søhest {
   position: absolute; 
   width: 100px; 
   bottom: 30%; 
