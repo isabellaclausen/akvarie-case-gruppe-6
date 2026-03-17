@@ -8,12 +8,24 @@ body {
     margin: 0;
 }
 
+
+
+
+
 /* Krabben - bliver i den position du har valgt */
 .krabbe {
   position: absolute;
   width: 190px;   /* størrelse på krabben */
   bottom: -15px;  /* hvor tæt på bunden */
   right: 410px;   /* hvor tæt på højre side */
+}
+
+
+/* Krabben */
+.krabbe {
+  width: 190px;
+  cursor: pointer;
+  display: block;
 }
 
 .sostjerne {
@@ -54,6 +66,7 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
+
 }
 
 /* Container der holder krabbe og taleboble sammen */
@@ -62,13 +75,6 @@ body {
   bottom: -15px;
   right: 410px;
   width: fit-content; /* gør containeren kun så bred som krabben */
-}
-
-/* Krabben */
-.krabbe {
-  width: 190px;
-  cursor: pointer;
-  display: block;
 }
 
 /* Taleboble */
@@ -123,6 +129,61 @@ body {
   border-color: white transparent transparent transparent;
 
 }
+
+
+
+
+
+
+
+
+
+/* guldfisken og den blå fisk */
+
+.guldfisk {
+  position: relative;
+  width: 190px;   
+  top: 100px;      
+  left: 100px;    
+}
+
+.blå-fisk {
+  position: relative;
+  width: 120px;   
+  top: 150px;      
+  left: 200px;     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Baggrund */
+body {
+    background-image: url("../img/baggrund-akvarie.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+
+
+
 
 /* musling med glimmer */
 
@@ -179,6 +240,7 @@ body {
   }
 
 
+<<<<<<< HEAD
 .sostjerne
 {
 width: 75;
@@ -188,3 +250,8 @@ width: 75;
     right: 100px;
     position: absolute;
 }
+=======
+  
+  
+
+>>>>>>> 48ee997c23d8553add5b24c3543192fb5980676e
