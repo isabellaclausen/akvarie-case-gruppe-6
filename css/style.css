@@ -16,6 +16,14 @@ body {
   right: 410px;   /* hvor tæt på højre side */
 }
 
+.sostjerne {
+position: relative;
+width: 75px;
+top: 75;
+left: 75;
+
+}
+
 .guldfisk {
   position: relative;
   width: 190px;   
@@ -169,5 +177,8 @@ body {
     left: 50px;
     position: absolute;
   }
+
+
+  .s
   
 
