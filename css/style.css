@@ -464,6 +464,15 @@ body {
   z-index: 1;
 }
 
+.gul-ubaad {
+  width: 150px;           
+  position: absolute;     
+  bottom: -2%;           
+  left: 620px;             
+  cursor: pointer; 
+
+}
+
 @keyframes dory-fisk {
   0% {
     transform: translateX(0); 
