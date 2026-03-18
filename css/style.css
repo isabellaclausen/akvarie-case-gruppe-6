@@ -197,36 +197,41 @@ body {
 
 
 
-/* Taleboble ved sohest */
-.tooltip {
-  position:fixed;
-  display: inline-block;
-  width: max-content;
-  max-width: 240px;
-  line-height: 1.3;
-  background: #cfefff; /* lys blå boble */
+
+
+#scene {
+  position: relative;
+}
+
+#sohestTooltip {
+  position: absolute;
+
+  background: #cfefff;
   color: #0b3d5c;
+
   padding: 16px 20px;
-  border-radius: 30px; /* mere rund */
+  border-radius: 30px;
+
   font-family: 'fredoka', sans-serif;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 600;
+
   text-align: center;
-  max-width: 240px;
+  max-width: 260px;   /* 🔥 styrer størrelsen */
+  width: auto;        /* 🔥 vigtig */
+  line-height: 1.3;
+
   border: 4px solid #8dd9ff;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+
   opacity: 0;
   transition: 0.25s;
+
   pointer-events: none;
   z-index: 1000;
 }
 
-.tooltip.is-visible {
-  opacity: 1;
-}
-
-/* Når JavaScript viser den */
-.tooltip.is-visible {
+#sohestTooltip.is-visible {
   opacity: 1;
 }
 
