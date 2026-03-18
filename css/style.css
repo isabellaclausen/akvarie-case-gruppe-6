@@ -100,8 +100,10 @@ body {
   bottom: 30%; 
   cursor: pointer;
   display: block;
-  transform: rotateY(180deg);
+  z-index: 1;
 
+  right: calc(100vw + var(--off-søhest)); /* start ude til venstre*/
+  animation: søhest 23s linear infinite;
 }
 
 @keyframes søhest {
@@ -197,53 +199,6 @@ body {
 
 
 
-#scene {
-  position: relative;
-  overflow: hidden;
-}
-
-#sohestWrap {
-  position: absolute;
-  bottom: 30%;
-  right: calc(100vw + var(--off-søhest));
-  animation: søhest 23s linear infinite;
-}
-
-#sohest {
-  width: 90px;
-  display: block;
-  cursor: pointer;
-}
-
-#sohestTooltip {
-  position: absolute;
-  bottom: 95px;         /* boblen over søhesten */
-  left: 50%;
-  transform: translateX(-50%);
-
-  background: #cfefff;
-  color: #0b3d5c;
-  padding: 16px 20px;
-  border-radius: 30px;
-  border: 4px solid #8dd9ff;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-
-  font-family: 'fredoka', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  text-align: center;
-  white-space: nowrap;
-
-  opacity: 0;
-  transition: 0.25s;
-  pointer-events: none;
-}
-
-#sohestTooltip.is-visible {
-  opacity: 1;
-}
-
 
 
 
@@ -315,11 +270,11 @@ body {
   }
 
  .pink-koral {
-  width: 150px;
+  width: 290px;
   cursor: pointer;
   display: block;
-  bottom: -30px;  
-  right: 0px;
+  bottom: 5px;
+  right: 10px;
   position: absolute;
   }
 
@@ -343,20 +298,13 @@ body {
   z-index: 2; /* foran stenen */
   }
 
-  #rod-sostjerne-1 {
+  .sostjerne {
   position: absolute;
   bottom: 90px;
-  right: 160px;
+  right: 100px;
   width: 75px;
   height: 75px;
-  }
 
-  #rod-sostjerne-2 {
-  position: absolute;
-  bottom: 70px;
-  right: 220px;
-  width: 50px;
-  height: 50px;
   }
 
 
@@ -485,20 +433,16 @@ body {
   100% {
     transform: translateX(calc(100vw + 300px));
   }
-
-}
-.gul-ubaad {
-  width: 150px;           
-  position: absolute;     
-  bottom: -2%;           
-  left: 620px;             
-  cursor: pointer; 
-
 }
 
 
 
+#sohestTooltip {
+  bottom: auto;     /* 🔥 fjerner den faste bund */
+  left: auto;       /* 🔥 fjerner fast venstre */
+  transform: none;  /* 🔥 nulstil */
 
-
+  position: fixed;  /* 🔥 gør at JS kan styre den */
+}
 
 

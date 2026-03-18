@@ -4,9 +4,8 @@ const krabbe = document.getElementById("krabbe");
 const krabbeTooltip = document.getElementById("krabbeTooltip");
 
 krabbe.addEventListener("click", () => {
-  krabbeTooltip.classList.toggle("is-visible");
+  crabTooltip.classList.toggle("is-visible");
 });
-
 
 
 
@@ -15,8 +14,16 @@ const sohest = document.getElementById("sohest");
 const sohestTooltip = document.getElementById("sohestTooltip");
 
 sohest.addEventListener("click", () => {
+  const rect = sohest.getBoundingClientRect();
+
+  sohestTooltip.style.left = rect.left + rect.width / 2 + "px";
+  sohestTooltip.style.top = rect.top - 80 + "px";
+  sohestTooltip.style.transform = "translateX(-50%)";
+
   sohestTooltip.classList.toggle("is-visible");
 });
+
+
 
 
 
