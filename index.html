@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akvarie</title>
+    <!-- Link (script) til Lottie-animations fil -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <img src="img/krabbe1.gif" alt="krabbe" class="krabbe" id="krabbe"> 
 <img src="img/guldfisk.gif" alt="guldfisk" class="guldfisk">
 <img src="img/blue-fish.gif" alt="blå fisk" class="blå-fisk">
-<img src="img/seahorse.gif" alt="søhest" class="sohest">
+<img src="img/seahorse.gif" alt="søhest" class="sohest" id="sohest">
 <img src="img/un-finish-musling.gif" alt="ufærdig musling" class="ufærdig-musling" id="musling"> 
 <img src="img/skattekiste.png" alt="skattekiste" class="skattekiste" id="skattekiste">
 <img src="img/stjerne.gif" alt="stjerne ved kiste" class="stjerne" id="stjerne">
@@ -34,7 +36,28 @@
 <img src="img/skygger-fisk-2.gif" alt="skygger fisk 2" class="skygger-fisk2" id="skygger-fisk2">
 
 <img src="img/haj.gif" alt="haj" class="haj">
+<<<<<<< HEAD
+
+<!-- Sådan indsættes en Lottie-animation -->
+<div id="lottie-animation" style="width:300px; height:300px;"></div>
+<script>
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'json/gul-ubaad.json' // stien til din Lottie-fil
+  });
+</script>
+
+
+
+
+
+
+=======
 <img src="img/dory-fisk.gif" alt="dory-fisk" class="dory-fisk" id="dory-fisk">
+>>>>>>> 738c9aecce9756607d01fb1801fde6555f570c1f
 
 
 
@@ -48,10 +71,18 @@
   </div>
 
 
+  <!-- taleboblen ved siden af søhest -->
+  <div class="tooltip" id="sohestTooltip">
+  Hej! Jeg er en søhest 
+  Jeg svømmer rundt!
+</div>
+
+
 
 
   
 
   <script src="js/script.js"></script>  
+  
 </body>
 </html>
