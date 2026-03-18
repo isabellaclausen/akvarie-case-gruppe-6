@@ -10,7 +10,7 @@ krabbe.addEventListener("click", () => {
 
 const sohest = document.getElementById("sohest");
 const sohestTooltip = document.getElementById("sohestTooltip");
-const scene = document.getElementById("scene");
+const scene1 = document.getElementById("scene1");
 
 let following = false;
 
@@ -28,10 +28,10 @@ function followSohest() {
   if (!following) return;
 
   const rect = sohest.getBoundingClientRect();
-  const sceneRect = scene.getBoundingClientRect();
+  const scene1Rect = scene1.getBoundingClientRect();
 
-  const x = rect.left - sceneRect.left + rect.width / 2;
-  const y = rect.top - sceneRect.top;
+  const x = rect.left - scene1Rect.left + rect.width / 2;
+  const y = rect.top - scene1Rect.top;
 
   sohestTooltip.style.left = x + "px";
   sohestTooltip.style.top = (y - 100) + "px";
