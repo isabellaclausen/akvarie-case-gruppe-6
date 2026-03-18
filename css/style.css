@@ -40,7 +40,7 @@ body {
 .guldfisk {
   position: absolute;
   width: 190px;   
-  top: 100px;        
+  top: 400px;        
   cursor: pointer;
   animation: guldfisk 10s linear infinite;
   left: 100vw;
@@ -62,7 +62,7 @@ body {
   top: 300px;
   width: 120px;
   cursor: pointer;
-  animation: barbie-fisk 12s linear infinite;
+  animation: barbie-fisk 14s linear infinite;
   left: 100vw;
   z-index: 1;
 }
