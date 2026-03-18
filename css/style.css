@@ -481,5 +481,19 @@ body {
 
 
 
+.sandslot {
+  width: 10px;
+  cursor: pointer;
+  display: block;
+  bottom: 150px;
+  left: 8px;
+  position: absolute;
+
+}
+
+
+
+
+
 
 
