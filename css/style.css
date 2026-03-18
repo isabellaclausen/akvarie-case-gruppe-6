@@ -298,13 +298,20 @@ body {
   z-index: 2; /* foran stenen */
   }
 
-  .sostjerne {
+  #rod-sostjerne-1 {
   position: absolute;
   bottom: 90px;
   right: 100px;
   width: 75px;
   height: 75px;
+  }
 
+  #rod-sostjerne-2 {
+  position: absolute;
+  bottom: 90px;
+  right: 100px;
+  width: 75px;
+  height: 75px;
   }
 
 
