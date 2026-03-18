@@ -44,6 +44,7 @@ body {
   cursor: pointer;
   animation: guldfisk 10s linear infinite;
   left: 100vw;
+   z-index: 1;
 }
 
 @keyframes guldfisk {
