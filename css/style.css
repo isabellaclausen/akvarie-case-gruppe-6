@@ -384,6 +384,19 @@ body {
   width: 300px;   
   top: 100px;      
   left: 800px;
+  cursor: pointer;
+  animation: haj 20s linear infinite;
+  left: 100vw;
+  z-index: 1;
+}
+
+@keyframes haj {
+  0% {
+    transform: translateX(0); /* Start udenfor højre side */
+  }
+  100% {
+    transform: translateX(calc(-100vw - 300px)); /* Svøm hele vejen ud til venstre */
+  }
 }
 
 
