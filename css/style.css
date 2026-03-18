@@ -373,5 +373,12 @@ body {
   
 }
 
+.haj {
+  position: absolute;
+  width: 300px;   
+  top: 100px;      
+  left: 800px;
+}
+
 
  
