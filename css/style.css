@@ -291,15 +291,22 @@ body {
 
 }
 
- .tang
-  {
+ .tang {
   width: 290px;
   cursor: pointer;
   display: block;
   bottom: 5px;
   left: 265px;
   position: absolute;
+  }
 
+ .pink-koral {
+  width: 290px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  right: 10px;
+  position: absolute;
   }
 
   .koral-bl {
@@ -438,6 +445,24 @@ body {
   }
   100% {
     transform: translateX(calc(-100vw - 300px)); /* Svøm hele vejen ud til venstre */
+  }
+}
+
+.dory-fisk {
+  position: absolute;
+  width: 100px;   
+  top: 200px;      
+  cursor: pointer;
+  animation: dory-fisk 16s linear infinite;
+  z-index: 1;
+}
+
+@keyframes dory-fisk {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(calc(100vw + 300px));
   }
 }
 
