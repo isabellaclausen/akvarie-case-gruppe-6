@@ -100,10 +100,8 @@ body {
   bottom: 30%; 
   cursor: pointer;
   display: block;
-  z-index: 1;
+  transform: rotateY(180deg);
 
-  right: calc(100vw + var(--off-søhest)); /* start ude til venstre*/
-  animation: søhest 23s linear infinite;
 }
 
 @keyframes søhest {
@@ -201,34 +199,45 @@ body {
 
 #scene {
   position: relative;
+  overflow: hidden;
+}
+
+#sohestWrap {
+  position: absolute;
+  bottom: 30%;
+  right: calc(100vw + var(--off-søhest));
+  animation: søhest 23s linear infinite;
+}
+
+#sohest {
+  width: 90px;
+  display: block;
+  cursor: pointer;
 }
 
 #sohestTooltip {
   position: absolute;
+  bottom: 95px;         /* boblen over søhesten */
+  left: 50%;
+  transform: translateX(-50%);
 
   background: #cfefff;
   color: #0b3d5c;
-
   padding: 16px 20px;
   border-radius: 30px;
+  border: 4px solid #8dd9ff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 
   font-family: 'fredoka', sans-serif;
   font-size: 20px;
   font-weight: 600;
-
-  text-align: center;
-  max-width: 260px;   /* 🔥 styrer størrelsen */
-  width: auto;        /* 🔥 vigtig */
   line-height: 1.3;
-
-  border: 4px solid #8dd9ff;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  white-space: nowrap;
 
   opacity: 0;
   transition: 0.25s;
-
   pointer-events: none;
-  z-index: 1000;
 }
 
 #sohestTooltip.is-visible {
