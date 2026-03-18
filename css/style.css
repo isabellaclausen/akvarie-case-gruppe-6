@@ -73,17 +73,17 @@ body {
 }
 
 
-.blå-fisk {
+.blue-fisk {
   position: absolute;
   width: 120px;
   top: 150px;
  
   cursor: pointer;
-  animation: blå-fisk 12s linear infinite;
+  animation: blue-fisk 12s linear infinite;
   left: 100vw;
 }
 
-@keyframes blå-fisk {
+@keyframes blue-fisk {
   0% {
     transform: translateX(0); /* Start udenfor højre side */
   }
@@ -318,12 +318,11 @@ body {
 
 
 /* Havfruen */
-  .havfrue-vinker {
+  .havfrue-snakker {
   position: absolute;
-  bottom: 5px; 
-  top: 340px; 
-  right: 120px;
-  width: 400px;
+  bottom: -170px;
+  right: -80px;
+  width: 550px;
   z-index: 2; /* foran stenen */
   }
 
