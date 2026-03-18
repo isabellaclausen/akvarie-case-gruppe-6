@@ -9,37 +9,73 @@ krabbe.addEventListener("click", () => {
 
 // taleboble til søhest som følger med den //
 
-const sohest = document.getElementById("sohest");
-const sohestTooltip = document.getElementById("sohestTooltip");
+
+
+// prøve
+// talebobler til fisk og søhest som følger med dem
 const scene1 = document.getElementById("scene1");
 
-let following = false;
+function makeFollowTooltip(animalId, tooltipId, offsetY = 100) {
+  const animal = document.getElementById(animalId);
+  const tooltip = document.getElementById(tooltipId);
 
-sohest.addEventListener("click", () => {
-  following = !following; // tænd/sluk
-
-  sohestTooltip.classList.toggle("is-visible");
-
-  if (following) {
-    followSohest();
+  if (!animal) {
+    console.log("Mangler animal:", animalId);
+    return;
   }
-});
 
-function followSohest() {
-  if (!following) return;
+  if (!tooltip) {
+    console.log("Mangler tooltip:", tooltipId);
+    return;
+  }
 
-  const rect = sohest.getBoundingClientRect();
-  const scene1Rect = scene1.getBoundingClientRect();
+  if (!scene1) {
+    console.log("Mangler scene1");
+    return;
+  }
 
-  const x = rect.left - scene1Rect.left + rect.width / 2;
-  const y = rect.top - scene1Rect.top;
+  let following = false;
 
-  sohestTooltip.style.left = x + "px";
-  sohestTooltip.style.top = (y - 100) + "px";
-  sohestTooltip.style.transform = "translateX(-50%)";
+  animal.addEventListener("click", () => {
+    following = !following;
+    tooltip.classList.toggle("is-visible");
 
-  requestAnimationFrame(followSohest); //  kører hele tiden
+    if (following) {
+      followAnimal();
+    }
+  });
+
+  function followAnimal() {
+    if (!following) return;
+
+    const rect = animal.getBoundingClientRect();
+    const scene1Rect = scene1.getBoundingClientRect();
+
+    const x = rect.left - scene1Rect.left + rect.width / 2;
+    const y = rect.top - scene1Rect.top;
+
+    tooltip.style.left = x + "px";
+    tooltip.style.top = (y - offsetY) + "px";
+    tooltip.style.transform = "translateX(-50%)";
+
+    requestAnimationFrame(followAnimal);
+  }
 }
+
+
+
+// her vælger du hvilke dyr/fisk der skal have talebobler
+makeFollowTooltip("sohest", "sohestTooltip", 100);
+makeFollowTooltip("guldfisk", "guldfiskTooltip", 100);
+makeFollowTooltip("blue-fisk", "blueFiskTooltip", 100);
+makeFollowTooltip("stribet-fisk", "stribetFiskTooltip", 100);
+makeFollowTooltip("barbie-fisk", "barbieFiskTooltip", 100);
+makeFollowTooltip("dory-fisk", "doryFiskTooltip", 100);
+
+
+
+
+
 
 
 
