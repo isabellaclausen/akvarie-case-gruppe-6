@@ -13,7 +13,7 @@ body {
   --off-søhest: 200px; 
   --off-stribetfisk: 200px; 
   --off-blå-fisk: 200px; 
-  --off-barbie-fisk: 200px; 
+  --off-barbie-fisk: 200px;  
   --off-guldfisk: 200px; 
 }
 
@@ -149,7 +149,7 @@ body {
     transform: translateX(calc(100vw + 300px));
   }
 }
-
+ 
 /* Haj */
 .haj {
   position: absolute;
@@ -158,6 +158,7 @@ body {
   left: 100vw;
   animation: haj 20s linear infinite;
   z-index: 1;
+  cursor: pointer;
 }
 
 @keyframes haj {
