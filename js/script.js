@@ -8,22 +8,26 @@ krabbe.addEventListener("click", () => {
 });
 
 
+
+
+
 const sohest = document.getElementById("sohest");
 const sohestTooltip = document.getElementById("sohestTooltip");
+const scene = document.getElementById("scene");
 
 sohest.addEventListener("click", () => {
   const rect = sohest.getBoundingClientRect();
+  const sceneRect = scene.getBoundingClientRect();
 
-  // centrér boblen over søhesten
-  sohestTooltip.style.left = rect.left + rect.width / 2 + "px";
-  sohestTooltip.style.top = rect.top - 80 + "px";
+  const x = rect.left - sceneRect.left + rect.width / 2;
+  const y = rect.top - sceneRect.top;
 
-  // gør at den bliver centreret korrekt
+  sohestTooltip.style.left = x + "px";
+  sohestTooltip.style.top = (y - 100) + "px";
   sohestTooltip.style.transform = "translateX(-50%)";
 
   sohestTooltip.classList.toggle("is-visible");
 });
-
 
 
 
