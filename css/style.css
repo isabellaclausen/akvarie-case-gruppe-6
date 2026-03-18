@@ -476,7 +476,7 @@ body {
   100% {
     transform: translateX(calc(100vw + 300px));
   }
-  
+
 }
 .gul-ubaad {
   width: 150px;           
@@ -486,6 +486,8 @@ body {
   cursor: pointer; 
 
 }
+
+
 
 
 
