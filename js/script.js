@@ -1,7 +1,7 @@
 "use strict";
 
-const crab = document.getElementById("krabbe");
-const crabTooltip = document.getElementById("krabbeTooltip");
+const krabbe = document.getElementById("krabbe");
+const krabbeTooltip = document.getElementById("krabbeTooltip");
 
 krabbe.addEventListener("click", () => {
   krabbeTooltip.classList.toggle("is-visible");
@@ -13,35 +13,10 @@ krabbe.addEventListener("click", () => {
 
 const sohest = document.getElementById("sohest");
 const sohestTooltip = document.getElementById("sohestTooltip");
-const scene = document.getElementById("scene");
-
-let following = false;
 
 sohest.addEventListener("click", () => {
-  following = !following; // tænd/sluk
-
   sohestTooltip.classList.toggle("is-visible");
-
-  if (following) {
-    followSohest();
-  }
 });
-
-function followSohest() {
-  if (!following) return;
-
-  const rect = sohest.getBoundingClientRect();
-  const sceneRect = scene.getBoundingClientRect();
-
-  const x = rect.left - sceneRect.left + rect.width / 2;
-  const y = rect.top - sceneRect.top;
-
-  sohestTooltip.style.left = x + "px";
-  sohestTooltip.style.top = (y - 100) + "px";
-  sohestTooltip.style.transform = "translateX(-50%)";
-
-  requestAnimationFrame(followSohest); // 🔥 kører hele tiden
-}
 
 
 
@@ -101,7 +76,7 @@ const bobbel = document.getElementById("bobbel");
 
 bobbel.addEventListener("click", popbobbel);
 
-spawnbobbel();
+spawnBobbel();
 
 function popbobbel() {
   if (bobbel.classList.contains("pop")) return;
