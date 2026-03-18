@@ -401,4 +401,22 @@ body {
   }
 }
 
+.dory-fisk {
+  position: absolute;
+  width: 100px;   
+  top: 200px;      
+  cursor: pointer;
+  animation: dory-fisk 16s linear infinite;
+  z-index: 1;
+}
+
+@keyframes dory-fisk {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(calc(100vw + 300px));
+  }
+}
+
 
