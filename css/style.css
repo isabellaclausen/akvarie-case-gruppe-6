@@ -238,7 +238,7 @@ body {
   position: fixed;       
   width: 12px;
   height: 12px;
-  background: gold;       
+  background: white;       
   border-radius: 50%; 
   
   animation: sparkle 0.8s ease-out forwards;
