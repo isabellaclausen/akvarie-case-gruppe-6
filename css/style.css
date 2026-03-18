@@ -306,12 +306,14 @@ body {
   width: 100px;
 }
 
-.stjerne {
+.stjerne2 {
    position: absolute;
-  bottom: 12%;
-  left: 12%;
-  width: 100px;
+  bottom: 15%;
+  left: 8%;
+  width: 50px;
 }
+
+
 
 
 
