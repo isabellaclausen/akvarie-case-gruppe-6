@@ -25,15 +25,10 @@ body {
   width: 190px;   /* størrelse på krabben */
   bottom: -15px;  /* hvor tæt på bunden */
   right: 410px;   /* hvor tæt på højre side */
-}
-
-
-/* Krabben */
-.krabbe {
-  width: 190px;
   cursor: pointer;
   display: block;
 }
+
 
 
 
