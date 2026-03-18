@@ -251,15 +251,22 @@ body {
 
 }
 
- .tang
-  {
+ .tang {
   width: 290px;
   cursor: pointer;
   display: block;
   bottom: 5px;
   left: 265px;
   position: absolute;
+  }
 
+ .pink-koral {
+  width: 290px;
+  cursor: pointer;
+  display: block;
+  bottom: 5px;
+  right: 10px;
+  position: absolute;
   }
 
   .koral-bl {
