@@ -210,7 +210,6 @@ body {
 
 
 
-
 /* Scene container */
 .scene {
   position: relative;
@@ -300,12 +299,19 @@ body {
   width: 300px;
 }
 
+.stjerne {
+   position: absolute;
+  bottom: 12%;
+  left: 12%;
+  width: 100px;
+}
 
-
-
-
-
- 
+.stjerne {
+   position: absolute;
+  bottom: 12%;
+  left: 12%;
+  width: 100px;
+}
 
 
 
@@ -374,4 +380,3 @@ body {
 }
 
 
- 
