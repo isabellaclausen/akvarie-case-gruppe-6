@@ -40,9 +40,19 @@ function followSohest() {
   requestAnimationFrame(followSohest); //  kører hele tiden
 }
 
+// sound til havfruen //
+/* Hent alle DOM-elementerne */
+const gethavfrue = document.getElementById("havfrue-snakker");
+/* Opretter lydobjekter */
+const soundhavfruesnakker = new Audio();
+soundhavfruesnakker.src ="../sound/hejsa-jeg-hedder-ariel.mp3";
 
-
-
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (gethavfrue) {
+    gethavfrue.addEventListener("click", ()=> {
+        soundhavfruesnakker.play();
+    });
+}
 
 
 
