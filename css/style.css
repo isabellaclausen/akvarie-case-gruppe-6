@@ -198,7 +198,7 @@ body {
 
 
 
-#scene {
+#scene1 {
   position: relative;
 }
 
@@ -480,14 +480,18 @@ body {
 
 
 .sandslot {
-  width: 10px;
+  width: 200px;
   cursor: pointer;
   display: block;
-  bottom: 150px;
-  left: 8px;
+  bottom: -35px;
+  left: 350px;
   position: absolute;
 
 }
+
+
+
+
 
 
 

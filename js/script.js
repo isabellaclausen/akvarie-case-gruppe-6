@@ -7,6 +7,7 @@ krabbe.addEventListener("click", () => {
   krabbeTooltip.classList.toggle("is-visible");
 });
 
+// taleboble til søhest som følger med den //
 
 const sohest = document.getElementById("sohest");
 const sohestTooltip = document.getElementById("sohestTooltip");
@@ -39,6 +40,10 @@ function followSohest() {
 
   requestAnimationFrame(followSohest); //  kører hele tiden
 }
+
+
+
+
 
 // sound til havfruen //
 /* Hent alle DOM-elementerne */
@@ -156,3 +161,4 @@ function spawnBobbel() {
   bobbel.style.left = `${randomX}px`;
   bobbel.style.top = `${randomY}px`;
 }
+
