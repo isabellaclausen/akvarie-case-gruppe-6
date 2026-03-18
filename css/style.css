@@ -42,7 +42,7 @@ body {
   width: 190px;   
   top: 400px;        
   cursor: pointer;
-  animation: guldfisk 10s linear infinite;
+  animation: guldfisk 18s linear infinite;
   left: 100vw;
    z-index: 1;
 }
