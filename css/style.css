@@ -73,17 +73,17 @@ body {
 }
 
 
-.blå-fisk {
+.blue-fisk {
   position: absolute;
   width: 120px;
   top: 150px;
  
   cursor: pointer;
-  animation: blå-fisk 12s linear infinite;
+  animation: blue-fisk 12s linear infinite;
   left: 100vw;
 }
 
-@keyframes blå-fisk {
+@keyframes blue-fisk {
   0% {
     transform: translateX(0); /* Start udenfor højre side */
   }
@@ -299,11 +299,11 @@ body {
   }
 
  .pink-koral {
-  width: 290px;
+  width: 150px;
   cursor: pointer;
   display: block;
-  bottom: 5px;
-  right: 10px;
+  bottom: -30px;
+  right: 0px;
   position: absolute;
   }
 
@@ -318,19 +318,18 @@ body {
 
 
 /* Havfruen */
-  .havfrue-vinker {
+  .havfrue-snakker {
   position: absolute;
-  bottom: 5px; 
-  top: 340px; 
-  right: 120px;
-  width: 400px;
+  bottom: -170px;
+  right: -80px;
+  width: 550px;
   z-index: 2; /* foran stenen */
   }
 
   #rod-sostjerne-1 {
   position: absolute;
-  bottom: 90px;
-  right: 100px;
+  bottom: 120px;
+  right: 135px;
   width: 75px;
   height: 75px;
   }
@@ -338,9 +337,9 @@ body {
   #rod-sostjerne-2 {
   position: absolute;
   bottom: 90px;
-  right: 100px;
-  width: 75px;
-  height: 75px;
+  right: 200px;
+  width: 50px;
+  height: 50px;
   }
 
 
