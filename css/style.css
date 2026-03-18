@@ -198,7 +198,7 @@ body {
 
 
 
-#scene {
+#scene1 {
   position: relative;
 }
 
@@ -233,8 +233,6 @@ body {
 #sohestTooltip.is-visible {
   opacity: 1;
 }
-
-
 
 
 
