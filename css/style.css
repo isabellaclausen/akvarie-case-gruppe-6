@@ -301,11 +301,11 @@ body {
   }
 
  .pink-koral {
-  width: 290px;
+  width: 150px;
   cursor: pointer;
   display: block;
-  bottom: 5px;
-  right: 10px;
+  bottom: -30px;  
+  right: 0px;
   position: absolute;
   }
 
@@ -329,13 +329,20 @@ body {
   z-index: 2; /* foran stenen */
   }
 
-  .sostjerne {
+  #rod-sostjerne-1 {
   position: absolute;
   bottom: 90px;
-  right: 100px;
+  right: 160px;
   width: 75px;
   height: 75px;
+  }
 
+  #rod-sostjerne-2 {
+  position: absolute;
+  bottom: 70px;
+  right: 220px;
+  width: 50px;
+  height: 50px;
   }
 
 
