@@ -1,108 +1,109 @@
 /* Baggrund til hele siden */
 body {
-    background-image: url("../img/baggrund-akvarie.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
+  background-image: url("../img/baggrund-akvarie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* variabler */
-  :root {
-  /* start/exit offset */
-   --off-søhest: 200px; 
-   --off-stribetfisk: 200px; 
-   --off-blå-fisk: 200px; 
-   --off-barbie-fisk: 200px; 
-   --off-guldfisk: 200px; 
+:root {
+  --off-søhest: 200px; 
+  --off-stribetfisk: 200px; 
+  --off-blå-fisk: 200px; 
+  --off-barbie-fisk: 200px; 
+  --off-guldfisk: 200px; 
 }
 
+/* Scene til fish-tooltips */
+.scene {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
 
-/* Krabben - bliver i den position du har valgt */
+/* Krabben - bevares */
 .krabbe {
   position: absolute;
-  width: 190px;   /* størrelse på krabben */
-  bottom: -15px;  /* hvor tæt på bunden */
-  right: 410px;   /* hvor tæt på højre side */
+  width: 190px;
+  bottom: -15px;
+  right: 410px;
   cursor: pointer;
   display: block;
 }
 
-
-
-
-.guldfisk {
+/* Klikbare fisk */
+.guldfisk,
+.barbie-fisk,
+.blue-fisk,
+.sohest,
+.stribetfisk,
+.dory-fisk {
   position: absolute;
-  width: 190px;   
-  top: 400px;        
   cursor: pointer;
+  z-index: 20;
+}
+
+/* Guldfisk */
+.guldfisk {
+  width: 190px;
+  top: 400px;
   animation: guldfisk 18s linear infinite;
   left: 100vw;
-   z-index: 1;
 }
 
 @keyframes guldfisk {
   0% {
-    transform: translateX(0); /* Start udenfor højre side */
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+    transform: translateX(calc(-100vw - 120px));
   }
 }
 
-
- .barbie-fisk {
-  position: absolute;
-  right: 500px;
+/* Barbie-fisk */
+.barbie-fisk {
   top: 300px;
   width: 120px;
-  cursor: pointer;
   animation: barbie-fisk 14s linear infinite;
   left: 100vw;
-  z-index: 1;
 }
 
 @keyframes barbie-fisk {
   0% {
-    transform: translateX(0); /* Start udenfor højre side */
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+    transform: translateX(calc(-100vw - 120px));
   }
 }
 
-
+/* Blue-fisk */
 .blue-fisk {
-  position: absolute;
   width: 120px;
   top: 150px;
- 
-  cursor: pointer;
   animation: blue-fisk 12s linear infinite;
   left: 100vw;
 }
 
 @keyframes blue-fisk {
   0% {
-    transform: translateX(0); /* Start udenfor højre side */
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100vw - 120px)); /* Svøm hele vejen ud til venstre */
+    transform: translateX(calc(-100vw - 120px));
   }
 }
 
-
-
+/* Søhest */
 .sohest {
-  position: absolute; 
-  width: 70px; 
-  bottom: 30%; 
-  cursor: pointer;
+  width: 70px;
+  bottom: 30%;
   display: block;
-  z-index: 1;
-
-  right: calc(100vw + var(--off-søhest)); /* start ude til venstre*/
+  right: calc(100vw + var(--off-søhest));
   animation: søhest 23s linear infinite;
 }
 
@@ -110,52 +111,63 @@ body {
   0% {
     transform: translateX(0) rotateY(180deg);
   }
-  100% { transform: translateX(calc(100vw + var(--off-søhest))) rotateY(180deg); }
+  100% {
+    transform: translateX(calc(100vw + var(--off-søhest))) rotateY(180deg);
+  }
 }
 
-
+/* Stribet fisk */
 .stribetfisk {
-  position: absolute;
-  width: 140px;   
-  top: 45px;      
-  cursor: pointer;
+  width: 140px;
+  top: 45px;
   display: block;
-  z-index: 1;
-
-  left: calc(-1 * var(--off-stribetfisk)); /* start udenfor venstre */
+  left: calc(-1 * var(--off-stribetfisk));
   animation: stribetfisk 15s linear infinite;
 }
 
-
 @keyframes stribetfisk {
   0% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
   100% {
     transform: translateX(calc(100vw + var(--off-stribetfisk) + 140px));
   }
 }
 
-
-
-
-/* Scene container */
-.scene {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+/* Dory */
+.dory-fisk {
+  width: 100px;
+  top: 200px;
+  animation: dory-fisk 16s linear infinite;
 }
 
+@keyframes dory-fisk {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100vw + 300px));
+  }
+}
 
-
-/* Container der holder krabbe og taleboble sammen */
-.krabbe-wrap {
+/* Haj */
+.haj {
   position: absolute;
-  bottom: -15px;
-  right: 410px;
-  width: fit-content; /* gør containeren kun så bred som krabben */
+  width: 300px;
+  top: 100px;
+  left: 100vw;
+  animation: haj 20s linear infinite;
+  z-index: 1;
 }
 
+@keyframes haj {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 300px));
+  }
+}
 
 /* Taleboble ved krabbe */
 .tooltip {
@@ -163,24 +175,17 @@ body {
   bottom: 110px;
   left: 56%;
   transform: translateX(-50%);
-
-  background: #cfefff; /* lys blå boble */
+  background: #cfefff;
   color: #0b3d5c;
-
   padding: 16px 20px;
-  border-radius: 30px; /* mere rund */
-
+  border-radius: 30px;
   font-family: 'fredoka', sans-serif;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 600;
-
   text-align: center;
   max-width: 240px;
-
   border: 4px solid #8dd9ff;
-
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-
   opacity: 0;
   transition: 0.25s;
 }
@@ -189,92 +194,51 @@ body {
   opacity: 1;
 }
 
-/* Når JavaScript viser den */
-.tooltip.is-visible {
-  opacity: 1;
-}
-
-
-
-
-
-#scene1 {
-  position: relative;
-}
-
-#sohestTooltip {
+/* Fish tooltips */
+.fishTooltip {
   position: absolute;
-
   background: #cfefff;
   color: #0b3d5c;
-
   padding: 16px 20px;
   border-radius: 30px;
-
   font-family: 'fredoka', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  
   text-align: center;
   max-width: 260px;
   width: auto;
   line-height: 1.3;
-
   border: 4px solid #8dd9ff;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-
   opacity: 0;
-  transition: 0.25s; 
-
-  pointer-events: none; 
+  transition: 0.25s;
+  pointer-events: none;
   z-index: 1000;
 }
 
-#sohestTooltip.is-visible {
+.fishTooltip.is-visible {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Scene container */
-.scene {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* musling med glimmer */
-
+/* Musling */
 .ufærdig-musling {
-  width: 110px;           
-  position: absolute;     
-  bottom: -2%;           
-  left: 620px;             
-  cursor: pointer;        
+  width: 110px;
+  position: absolute;
+  bottom: -2%;
+  left: 620px;
+  cursor: pointer;
 }
 
-/* Glimmeret */
+/* Glimmer */
 .glimmer {
-  position: fixed;       
+  position: fixed;
   width: 12px;
   height: 12px;
-  background: white;       
-  border-radius: 50%; 
-  
+  background: white;
+  border-radius: 50%;
   animation: sparkle 0.8s ease-out forwards;
 }
 
-/* Animation der får glimmer til at flyve ud og fade */
 @keyframes sparkle {
   0% {
     opacity: 1;
@@ -284,62 +248,57 @@ body {
     opacity: 0;
     transform: translate(var(--x), var(--y)) scale(0.3);
   }
-
 }
 
- .tang {
+/* Bund-elementer */
+.tang {
   width: 290px;
-  cursor: pointer;
   display: block;
   bottom: 5px;
   left: 265px;
   position: absolute;
-  }
+}
 
- .pink-koral {
+.pink-koral {
   width: 150px;
-  cursor: pointer;
   display: block;
   bottom: -30px;
   right: 0px;
   position: absolute;
-  }
+}
 
-  .koral-bl {
+.koral-bl {
   width: 120px;
-  cursor: pointer;
   display: block;
   bottom: 5px;
   left: 2px;
   position: absolute;
-  }
+}
 
-
-/* Havfruen */
-  .havfrue-snakker {
+/* Havfrue */
+.havfrue-snakker {
   position: absolute;
   bottom: -170px;
   right: -80px;
   width: 550px;
-  z-index: 2; /* foran stenen */
-  }
+  z-index: 2;
+}
 
-  #rod-sostjerne-1 {
+#rod-sostjerne-1 {
   position: absolute;
   bottom: 120px;
   right: 135px;
   width: 75px;
   height: 75px;
-  }
+}
 
-  #rod-sostjerne-2 {
+#rod-sostjerne-2 {
   position: absolute;
   bottom: 90px;
   right: 200px;
   width: 50px;
   height: 50px;
-  }
-
+}
 
 .skattekiste {
   position: absolute;
@@ -349,25 +308,20 @@ body {
 }
 
 .stjerne {
-   position: absolute;
+  position: absolute;
   bottom: 12%;
   left: 12%;
   width: 100px;
 }
 
 .stjerne2 {
-   position: absolute;
+  position: absolute;
   bottom: 15%;
   left: 8%;
   width: 50px;
 }
 
-
-
-
-
-/* boblen  */
-
+/* Bobbel */
 .bobbel {
   width: 200px;
   display: block;
@@ -377,7 +331,6 @@ body {
   left: 100px;
 }
 
-/* pop animation */
 .bobbel.pop {
   animation: pop 0.25s ease-out forwards;
 }
@@ -393,7 +346,6 @@ body {
   }
 }
 
-/* små "sprøjt" */
 .particle {
   position: fixed;
   width: 6px;
@@ -411,64 +363,24 @@ body {
   }
 }
 
-
-
+/* Skyggefisk */
 .skygger-fisk {
   position: absolute;
-  width: 500px;   
-  top: 300px;      
-  left: 180px;     
-  opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
+  width: 500px;
+  top: 300px;
+  left: 180px;
+  opacity: 0.2;
 }
 
 .skygger-fisk2 {
   position: absolute;
-  width: 500px;   
-  bottom: 60px;     
-  left: 600px;    
-  opacity: 0.2; /* gør fisken mere gennemsigtig for at ligne en skygge */
-  
+  width: 500px;
+  bottom: 60px;
+  left: 600px;
+  opacity: 0.2;
 }
 
-.haj {
-  position: absolute;
-  width: 300px;   
-  top: 100px;      
-  left: 800px;
-  cursor: pointer;
-  animation: haj 20s linear infinite;
-  left: 100vw;
-  z-index: 1;
-}
-
-@keyframes haj {
-  0% {
-    transform: translateX(0); /* Start udenfor højre side */
-  }
-  100% {
-    transform: translateX(calc(-100vw - 300px)); /* Svøm hele vejen ud til venstre */
-  }
-}
-
-.dory-fisk {
-  position: absolute;
-  width: 100px;   
-  top: 200px;      
-  cursor: pointer;
-  animation: dory-fisk 16s linear infinite;
-  z-index: 1;
-}
-
-@keyframes dory-fisk {
-  0% {
-    transform: translateX(0); 
-  }
-  100% {
-    transform: translateX(calc(100vw + 300px));
-  }
-}
-
-
+/* U-båd */
 .gul-ubaad {
   width: 150px;
   position: absolute;
@@ -477,18 +389,28 @@ body {
   cursor: pointer;
 }
 
-
-
+/* Sandslot */
 .sandslot {
   width: 200px;
-  cursor: pointer;
   display: block;
   bottom: -35px;
   left: 350px;
   position: absolute;
-
 }
 
+/* Elementer der ikke skal stjæle klik fra fiskene */
+.skygger-fisk,
+.skygger-fisk2,
+.haj,
+.tang,
+.koral-bl,
+.pink-koral,
+.skattekiste,
+.stjerne,
+.stjerne2,
+.sandslot {
+  pointer-events: none;
+}
 
 
 
