@@ -485,6 +485,20 @@ body {
   100% {
     transform: translateX(calc(100vw + 300px));
   }
+
 }
+.gul-ubaad {
+  width: 150px;           
+  position: absolute;     
+  bottom: -2%;           
+  left: 620px;             
+  cursor: pointer; 
+
+}
+
+
+
+
+
 
 
