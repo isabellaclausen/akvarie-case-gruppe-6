@@ -469,6 +469,15 @@ body {
   z-index: 1;
 }
 
+@keyframes dory-fisk {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(calc(100vw + 300px));
+  }
+  
+}
 .gul-ubaad {
   width: 150px;           
   position: absolute;     
@@ -478,14 +487,6 @@ body {
 
 }
 
-@keyframes dory-fisk {
-  0% {
-    transform: translateX(0); 
-  }
-  100% {
-    transform: translateX(calc(100vw + 300px));
-  }
-}
 
 
 
