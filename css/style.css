@@ -156,7 +156,8 @@ body {
   width: fit-content; /* gør containeren kun så bred som krabben */
 }
 
-/* Taleboble */
+
+/* Taleboble ved krabbe */
 .tooltip {
   position: absolute;
   bottom: 110px;
@@ -170,7 +171,7 @@ body {
   border-radius: 30px; /* mere rund */
 
   font-family: 'fredoka', sans-serif;
-  font-size: 20px; /* større tekst til små børn */
+  font-size: 20px; 
   font-weight: 600;
 
   text-align: center;
@@ -188,25 +189,19 @@ body {
   opacity: 1;
 }
 
-
 /* Når JavaScript viser den */
 .tooltip.is-visible {
   opacity: 1;
 }
 
-/* Lille trekant under taleboblen */
-.tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
 
-  border-width: 12px;
-  border-style: solid;
-  border-color: white transparent transparent transparent;
 
-}
+
+
+
+
+
+
 
 
 
@@ -313,12 +308,14 @@ body {
   width: 100px;
 }
 
-.stjerne {
+.stjerne2 {
    position: absolute;
-  bottom: 12%;
-  left: 12%;
-  width: 100px;
+  bottom: 15%;
+  left: 8%;
+  width: 50px;
 }
+
+
 
 
 
