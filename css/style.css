@@ -25,15 +25,10 @@ body {
   width: 190px;   /* størrelse på krabben */
   bottom: -15px;  /* hvor tæt på bunden */
   right: 410px;   /* hvor tæt på højre side */
-}
-
-
-/* Krabben */
-.krabbe {
-  width: 190px;
   cursor: pointer;
   display: block;
 }
+
 
 
 
@@ -42,7 +37,7 @@ body {
   width: 190px;   
   top: 400px;        
   cursor: pointer;
-  animation: guldfisk 10s linear infinite;
+  animation: guldfisk 18s linear infinite;
   left: 100vw;
    z-index: 1;
 }
@@ -238,7 +233,7 @@ body {
   position: fixed;       
   width: 12px;
   height: 12px;
-  background: gold;       
+  background: white;       
   border-radius: 50%; 
   
   animation: sparkle 0.8s ease-out forwards;
@@ -317,7 +312,7 @@ body {
 /* boblen  */
 
 .bobbel {
-  width: 160px;
+  width: 200px;
   display: block;
   cursor: pointer;
   position: absolute;
