@@ -161,3 +161,4 @@ function spawnBobbel() {
   bobbel.style.left = `${randomX}px`;
   bobbel.style.top = `${randomY}px`;
 }
+
