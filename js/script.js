@@ -74,13 +74,6 @@ makeFollowTooltip("dory-fisk", "doryFiskTooltip", 100);
 
 
 
-
-
-
-
-
-
-
 // sound til havfruen //
 /* Hent alle DOM-elementerne */
 const gethavfrue = document.getElementById("havfrue-snakker");
@@ -94,8 +87,6 @@ if (gethavfrue) {
         soundhavfruesnakker.play();
     });
 }
-
-
 
 
 
