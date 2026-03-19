@@ -187,7 +187,7 @@ musling.addEventListener("click", () => {
   const perleY = rect.top + rect.height * 0.6;
 
   // Laver flere små glimmer-partikler
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i <12; i++) {
 
     // Opretter et nyt element (en "gnist")
     const glimmer = document.createElement("div");
