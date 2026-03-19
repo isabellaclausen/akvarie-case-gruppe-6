@@ -172,6 +172,14 @@ body {
 }
  
 
+/* Nemofisk */
+.nemo {
+  right: 0%;
+  top: 250px;
+  position: absolute;
+  width: 100px;
+  animation: nemo 6s linear infinite;
+}
 
 
 /* Taleboble ved krabbe */
