@@ -179,6 +179,7 @@ body {
   position: absolute;
   width: 100px;
   animation: nemo 15s linear infinite;
+  cursor: pointer;
 }
   @keyframes nemo {
   0% {
