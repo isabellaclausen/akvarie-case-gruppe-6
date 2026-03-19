@@ -72,6 +72,7 @@ makeFollowTooltip("stribet-fisk", "stribetFiskTooltip", 100);
 makeFollowTooltip("barbie-fisk", "barbieFiskTooltip", 100);
 makeFollowTooltip("dory-fisk", "doryFiskTooltip", 100);
 makeFollowTooltip("haj", "hajFiskTooltip", 100);
+makeFollowTooltip("nemo", "nemoTooltip", 100);
 
 
 
