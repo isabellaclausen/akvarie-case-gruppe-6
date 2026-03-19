@@ -516,9 +516,6 @@ body {
 }
 
 
-
-
-
 .guldfisk,
 .barbie-fisk,
 .blue-fisk,
@@ -530,7 +527,10 @@ body {
   z-index: 20;
 }
 
-
+/* Skygge rundt om ubåden*/
+#gul-ubaad {
+  filter: drop-shadow(0 0 10px rgba(255, 230, 100, 0.8));
+}
 
 
 
