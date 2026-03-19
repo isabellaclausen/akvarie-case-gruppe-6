@@ -185,6 +185,20 @@ if (getguldfisk) {
     });
 }
 
+// sound til stribetfisk //
+/* Hent alle DOM-elementerne */
+const getstribetfisk = document.getElementById("stribet-fisk");
+/* Opretter lydobjekter */
+const soundstribetfisk = new Audio();
+soundstribetfisk.src ="../sound/stribet-fisk.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getstribetfisk) {
+    getstribetfisk.addEventListener("click", ()=> {
+        soundstribetfisk.play();
+    });
+}
+
 
 // Glimmer når man trykker på muslingen //
 
