@@ -113,7 +113,40 @@ if (getbarbie) {
   });
 }
 
+
 // Glimmer når man trykker på muslingen
+
+// sound til guld fisk //
+/* Hent alle DOM-elementerne */
+const getguldfisk = document.getElementById("guldfisk");
+/* Opretter lydobjekter */
+const soundguldfisk = new Audio();
+soundguldfisk.src ="../sound/sound-guldfisk.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getguldfisk) {
+    getguldfisk.addEventListener("click", ()=> {
+        soundguldfisk.play();
+    });
+}
+
+// sound til stribetfisk //
+/* Hent alle DOM-elementerne */
+const getstribetfisk = document.getElementById("stribet-fisk");
+/* Opretter lydobjekter */
+const soundstribetfisk = new Audio();
+soundstribetfisk.src ="../sound/stribet-fisk.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getstribetfisk) {
+    getstribetfisk.addEventListener("click", ()=> {
+        soundstribetfisk.play();
+    });
+}
+
+
+// Glimmer når man trykker på muslingen //
+
 const musling = document.getElementById("musling");
 
 if (musling) {
