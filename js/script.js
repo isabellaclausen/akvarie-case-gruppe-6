@@ -169,6 +169,20 @@ if (getbarbie) {
     });
 }
 
+// sound til guld fisk //
+/* Hent alle DOM-elementerne */
+const getguldfisk = document.getElementById("guldfisk");
+/* Opretter lydobjekter */
+const soundguldfisk = new Audio();
+soundguldfisk.src ="../sound/sound-guldfisk.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getguldfisk) {
+    getguldfisk.addEventListener("click", ()=> {
+        soundguldfisk.play();
+    });
+}
+
 
 // Glimmer når man trykker på muslingen //
 
