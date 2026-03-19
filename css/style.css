@@ -178,7 +178,7 @@ body {
   top: 250px;
   position: absolute;
   width: 100px;
-  animation: nemo 10s linear infinite;
+  animation: nemo 15s linear infinite;
 }
   @keyframes nemo {
   0% {
