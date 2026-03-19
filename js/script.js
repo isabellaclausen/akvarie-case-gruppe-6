@@ -199,6 +199,20 @@ if (getstribetfisk) {
     });
 }
 
+// sound til stribetfisk //
+/* Hent alle DOM-elementerne */
+const getdory = document.getElementById("dory-fisk");
+/* Opretter lydobjekter */
+const sounddoryfisk = new Audio();
+sounddoryfisk.src ="../sound/sound-dory.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getdory) {
+    getdory.addEventListener("click", ()=> {
+        sounddoryfisk.play();
+    });
+}
+
 
 // Glimmer når man trykker på muslingen //
 
