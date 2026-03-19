@@ -96,6 +96,7 @@ const gethavfrue = document.getElementById("havfrue-snakker");
 const soundhavfruesnakker = new Audio();
 soundhavfruesnakker.src = "../sound/hejsa-jeg-hedder-ariel.mp3";
 
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (gethavfrue) {
   gethavfrue.addEventListener("click", () => {
     soundhavfruesnakker.play();
@@ -121,7 +122,6 @@ const getguldfisk = document.getElementById("guldfisk");
 const soundguldfisk = new Audio();
 soundguldfisk.src ="../sound/sound-guldfisk.mp3";
 
-/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (getguldfisk) {
     getguldfisk.addEventListener("click", ()=> {
         soundguldfisk.play();
@@ -134,8 +134,6 @@ const getstribetfisk = document.getElementById("stribet-fisk");
 /* Opretter lydobjekter */
 const soundstribetfisk = new Audio();
 soundstribetfisk.src ="../sound/stribet-fisk.mp3";
-
-/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (getstribetfisk) {
     getstribetfisk.addEventListener("click", ()=> {
         soundstribetfisk.play();
@@ -149,7 +147,6 @@ const getdory = document.getElementById("dory-fisk");
 const sounddoryfisk = new Audio();
 sounddoryfisk.src ="../sound/sound-dory.mp3";
 
-/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (getdory) {
     getdory.addEventListener("click", ()=> {
         sounddoryfisk.play();
@@ -163,7 +160,6 @@ const getsohest = document.getElementById("sohest");
 const soundsohest = new Audio();
 soundsohest.src ="../sound/sound-sohest.mp3";
 
-/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (getsohest) {
     getsohest.addEventListener("click", ()=> {
         soundsohest.play();
@@ -177,7 +173,6 @@ const getnemo = document.getElementById("nemo");
 const soundnemo = new Audio();
 soundnemo.src ="../sound/sound-nemo.mp3";
 
-/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (getnemo) {
     getnemo.addEventListener("click", ()=> {
         soundnemo.play();
@@ -191,10 +186,35 @@ const gethaj = document.getElementById("haj");
 const soundhaj = new Audio();
 soundhaj.src ="../sound/sound-haj.mp3";
 
-/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (gethaj) {
     gethaj.addEventListener("click", ()=> {
         soundhaj.play();
+    });
+}
+
+// sound til krabbe //
+/* Hent alle DOM-elementerne */
+const getkrabbe = document.getElementById("krabbe");
+/* Opretter lydobjekter */
+const soundkrabbe = new Audio();
+soundkrabbe.src ="../sound/sound-krabbe.mp3";
+
+if (getkrabbe) {
+    getkrabbe.addEventListener("click", ()=> {
+        soundkrabbe.play();
+    });
+}
+
+// sound til blåfisk //
+/* Hent alle DOM-elementerne */
+const getblafisk = document.getElementById("blue-fisk");
+/* Opretter lydobjekter */
+const soundblafisk = new Audio();
+soundblafisk.src ="../sound/sound-blafisk.mp3";
+
+if (getblafisk) {
+    getblafisk.addEventListener("click", ()=> {
+        soundblafisk.play();
     });
 }
 
