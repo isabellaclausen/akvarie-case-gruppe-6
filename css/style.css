@@ -29,7 +29,7 @@ body {
 .haj {
   position: absolute;
   width: 300px;
-  top: 200px;
+  top: 180px;
   left: 100vw;
   animation: haj 20s linear infinite;
   z-index: 20;
