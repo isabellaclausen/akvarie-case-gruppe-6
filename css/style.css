@@ -535,17 +535,16 @@ body {
 }
 
 
-
 .talebobbel-havfrue {
  position: absolute;
   top: 300px;
   right: 300px;
   width: 200px;
   z-index: 30;
+}
 
-
+ 
 /* Skygge rundt om ubåden*/
 #gul-ubaad {
   filter: drop-shadow(0 0 10px rgba(255, 230, 100, 0.8));
-
 }
