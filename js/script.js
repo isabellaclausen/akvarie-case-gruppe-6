@@ -184,6 +184,21 @@ if (getnemo) {
     });
 }
 
+// sound til haj //
+/* Hent alle DOM-elementerne */
+const gethaj = document.getElementById("haj");
+/* Opretter lydobjekter */
+const soundhaj = new Audio();
+soundhaj.src ="../sound/sound-haj.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (gethaj) {
+    gethaj.addEventListener("click", ()=> {
+        soundhaj.play();
+    });
+}
+
+
 // Glimmer når man trykker på muslingen //
 
 const musling = document.getElementById("musling");
