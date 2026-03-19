@@ -170,6 +170,19 @@ if (getsohest) {
     });
 }
 
+// sound til nemo //
+/* Hent alle DOM-elementerne */
+const getnemo = document.getElementById("nemo");
+/* Opretter lydobjekter */
+const soundnemo = new Audio();
+soundnemo.src ="../sound/sound-nemo.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getnemo) {
+    getnemo.addEventListener("click", ()=> {
+        soundnemo.play();
+    });
+}
 
 // Glimmer når man trykker på muslingen //
 
