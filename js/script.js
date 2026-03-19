@@ -16,6 +16,71 @@ krabbe.addEventListener("click", () => {
 const scene1 = document.getElementById("scene1");
 
 function makeFollowTooltip(animalId, tooltipId, offsetY = 100) {
+
+  function makeFollowTooltip(animalId, tooltipId, offsetY = 100) {
+  const animal = document.getElementById(animalId);
+  const tooltip = document.getElementById(tooltipId);
+
+  if (!animal) {
+    console.log("Mangler animal:", animalId);
+    return;
+  }
+
+  if (!tooltip) {
+    console.log("Mangler tooltip:", tooltipId);
+    return;
+  }
+
+  if (!scene1) {
+    console.log("Mangler scene1");
+    return;
+  }
+
+  let following = false;
+  let animationId = null;
+
+  animal.addEventListener("click", () => {
+    following = !following;
+
+    if (following) {
+      tooltip.classList.add("is-visible");
+      followAnimal();
+    } else {
+      tooltip.classList.remove("is-visible");
+      cancelAnimationFrame(animationId);
+    }
+  });
+
+  function followAnimal() {
+    if (!following) return;
+
+    const rect = animal.getBoundingClientRect();
+    const scene1Rect = scene1.getBoundingClientRect();
+
+    const isOutsideScene =
+      rect.right < scene1Rect.left ||
+      rect.left > scene1Rect.right ||
+      rect.bottom < scene1Rect.top ||
+      rect.top > scene1Rect.bottom;
+
+    if (isOutsideScene) {
+      tooltip.classList.remove("is-visible");
+      following = false;
+      cancelAnimationFrame(animationId);
+      return;
+    }
+
+    const x = rect.left - scene1Rect.left + rect.width / 2;
+    const y = rect.top - scene1Rect.top;
+
+    tooltip.style.left = x + "px";
+    tooltip.style.top = (y - offsetY) + "px";
+    tooltip.style.transform = "translateX(-50%)";
+
+    animationId = requestAnimationFrame(followAnimal);
+  }
+}
+
   const animal = document.getElementById(animalId);
   const tooltip = document.getElementById(tooltipId);
 
