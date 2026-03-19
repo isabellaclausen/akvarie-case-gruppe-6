@@ -496,7 +496,6 @@ body {
 
 
 
-
 .guldfisk,
 .barbie-fisk,
 .blue-fisk,
@@ -509,6 +508,13 @@ body {
 }
 
 
+.talebobbel-havfrue {
+ position: absolute;
+  top: 300px;
+  right: 300px;
+  width: 200px;
+ 
+}
 
 
 
