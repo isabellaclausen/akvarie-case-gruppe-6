@@ -160,8 +160,12 @@ if (musling) {
       const glimmer = document.createElement("div");
       glimmer.classList.add("glimmer");
 
+
       const randomX = (Math.random() - 0.5) * 100 + "px";
       const randomY = (Math.random() - 0.5) * 100 + "px";
+
+  // Laver flere små glimmer-partikler
+  for (let i = 0; i <12; i++) {
 
       glimmer.style.left = perleX + "px";
       glimmer.style.top = perleY + "px";
