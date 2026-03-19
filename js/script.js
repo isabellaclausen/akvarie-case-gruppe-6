@@ -114,8 +114,6 @@ if (getbarbie) {
 }
 
 
-// Glimmer når man trykker på muslingen
-
 // sound til guld fisk //
 /* Hent alle DOM-elementerne */
 const getguldfisk = document.getElementById("guldfisk");
@@ -144,7 +142,7 @@ if (getstribetfisk) {
     });
 }
 
-// sound til stribetfisk //
+// sound til dory //
 /* Hent alle DOM-elementerne */
 const getdory = document.getElementById("dory-fisk");
 /* Opretter lydobjekter */
@@ -155,6 +153,20 @@ sounddoryfisk.src ="../sound/sound-dory.mp3";
 if (getdory) {
     getdory.addEventListener("click", ()=> {
         sounddoryfisk.play();
+    });
+}
+
+// sound til sohest //
+/* Hent alle DOM-elementerne */
+const getsohest = document.getElementById("sohest");
+/* Opretter lydobjekter */
+const soundsohest = new Audio();
+soundsohest.src ="../sound/sound-sohest.mp3";
+
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getsohest) {
+    getsohest.addEventListener("click", ()=> {
+        soundsohest.play();
     });
 }
 
