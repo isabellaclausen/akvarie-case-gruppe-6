@@ -175,7 +175,7 @@ if (musling) {
 
       document.body.appendChild(glimmer);
 
-      setTimeout(() => {
+      setTimeout(() => { 
         glimmer.remove();
       }, 800);
     }
