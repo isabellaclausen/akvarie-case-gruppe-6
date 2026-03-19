@@ -192,3 +192,30 @@ function spawnBobbel() {
   bobbel.style.top = `${randomY}px`;
 }
 
+/* Indsæt ubåd */
+
+const gulUbaad = document.getElementById("gul-ubaad");
+
+lottie.loadAnimation({
+  container: gulUbaad,
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "json/gul-ubaad.json"
+});
+
+let x = -300;
+
+function flytUbaad() {
+  x += 1;
+
+  gulUbaad.style.left = x + "px";
+
+  if (x > window.innerWidth) {
+    x = -300;
+  }
+
+  requestAnimationFrame(flytUbaad);
+}
+
+flytUbaad();
