@@ -178,8 +178,16 @@ body {
   top: 250px;
   position: absolute;
   width: 100px;
-  animation: nemo 6s linear infinite;
+  animation: nemo 10s linear infinite;
 }
+  @keyframes nemo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 120px));
+}
+  }
 
 
 /* Taleboble ved krabbe */
