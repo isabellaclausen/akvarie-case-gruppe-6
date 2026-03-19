@@ -157,7 +157,19 @@ if (gethavfrue) {
     });
 }
 
+// sound til barbie fisk //
+/* Hent alle DOM-elementerne */
+const getbarbie = document.getElementById("barbie-fisk");
+/* Opretter lydobjekter */
+const soundbarbie = new Audio();
+soundbarbie.src ="../sound/sound-barbie.mp3";
 
+/* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
+if (getbarbie) {
+    getbarbie.addEventListener("click", ()=> {
+        soundbarbie.play();
+    });
+}
 
 
 // Glimmer når man trykker på muslingen //
