@@ -275,9 +275,10 @@ body {
 .tang {
   width: 290px;
   display: block;
-  bottom: 5px;
+  bottom: 20px;
   left: 265px;
   position: absolute;
+  z-index: 50;
 }
 
 .pink-koral {
@@ -291,9 +292,10 @@ body {
 .koral-bl {
   width: 120px;
   display: block;
-  bottom: 5px;
+  bottom: -30px;
   left: 2px;
   position: absolute;
+  z-index: 50;
 }
 
 /* Havfrue */
