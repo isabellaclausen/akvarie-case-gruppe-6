@@ -160,12 +160,30 @@ body {
   animation: stribetfisk 15s linear infinite;
 }
 
+/* Få fisk til at dreje rundt */
 @keyframes stribetfisk {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
   }
+
+  20% {
+    transform: translateX(20vw) translateY(-30px);
+  }
+
+  40% {
+    transform: translateX(40vw) translateY(30px);
+  }
+
+  60% {
+    transform: translateX(60vw) translateY(-30px);
+  }
+
+  80% {
+    transform: translateX(80vw) translateY(30px);
+  }
+
   100% {
-    transform: translateX(calc(100vw + var(--off-stribetfisk) + 140px));
+    transform: translateX(calc(100vw + var(--off-stribetfisk) + 140px)) translateY(0);
   }
 }
 
