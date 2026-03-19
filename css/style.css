@@ -173,6 +173,7 @@ body {
  
 
 
+
 /* Taleboble ved krabbe */
 .tooltip {
   position: absolute;
@@ -418,7 +419,7 @@ body {
 
 .krabbe {
   display: inline-block; /* vigtigt */
-  animation: sway 3s ease-in-out infinite alternate;
+  animation: sway 1s ease-in-out infinite alternate;
 }
 
 @keyframes sway {
@@ -429,6 +430,18 @@ body {
     transform: translateX(15px);
   }
 }
+
+#gul-ubaad {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 50px;
+  left: -300px;
+  z-index: 10;
+  transform: scaleX(-1);
+}
+
+
 
 
 
