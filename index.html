@@ -30,7 +30,6 @@
   <img src="img/barbie-fisk.gif" alt="barbie fisk" class="barbie-fisk" id="barbie-fisk">
   <img src="img/dory-fisk.gif" alt="dory-fisk" class="dory-fisk" id="dory-fisk">
   <img src="img/haj.gif" alt="haj" class="haj" id="haj">
-
   <img src="img/skygger-fisk.gif" alt="skygger fisk" class="skygger-fisk" id="skygger-fisk">
   <img src="img/skygger-fisk-2.gif" alt="skygger fisk 2" class="skygger-fisk2" id="skygger-fisk2">
   <img src="img/havfrue-snakke.gif" alt="havfrue snakker" class="havfrue-snakker" id="havfrue-snakker">
@@ -62,6 +61,35 @@
 
   <!-- Link til JS -->
   <script src="js/script.js"></script>
+
+
+
+<!-- Sådan indsættes en Lottie-animation -->
+<div id="lottie-animation" style="width:700px; height:200px;"></div>
+<script>
+  lottie.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'json/gul-ubaad.json' // stien til din Lottie-fil
+  });
+</script>
+
+
+
+
+
+
+
+<!-- taleboblen ved siden af krabben -->
+<div class="tooltip" id="krabbeTooltip">
+  Hej! Jeg er en krabbe.
+  Jeg går sidelæns.
+</div>
+
+
+  <script src="js/script.js"></script>  
 
 </body>
 </html>
