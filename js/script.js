@@ -59,6 +59,8 @@ function makeFollowTooltip(animalId, tooltipId, offsetY = 100) {
     tooltip.style.transform = "translateX(-50%)";
 
     requestAnimationFrame(followAnimal);
+
+    
   }
 }
 
