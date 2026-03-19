@@ -25,6 +25,27 @@ body {
   z-index: 999;
 }
 
+/* Haj */
+.haj {
+  position: absolute;
+  width: 300px;
+  top: 100px;
+  left: 100vw;
+  animation: haj 20s linear infinite;
+  z-index: 20;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+@keyframes haj {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 300px));
+  }
+}
+
 /* Krabben - bevares */
 .krabbe {
   position: absolute;
@@ -146,29 +167,11 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(100vw + 300px));
+    transform: translateX(calc(100vw +  200px));
   }
 }
  
-/* Haj */
-.haj {
-  position: absolute;
-  width: 300px;
-  top: 100px;
-  left: 100vw;
-  animation: haj 20s linear infinite;
-  z-index: 1;
-  cursor: pointer;
-}
 
-@keyframes haj {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100vw - 300px));
-  }
-}
 
 /* Taleboble ved krabbe */
 .tooltip {
@@ -282,7 +285,7 @@ body {
   bottom: -170px;
   right: -80px;
   width: 550px;
-  z-index: 2;
+  z-index: 50;
 }
 
 #rod-sostjerne-1 {
@@ -402,7 +405,6 @@ body {
 /* Elementer der ikke skal stjæle klik fra fiskene */
 .skygger-fisk,
 .skygger-fisk2,
-.haj,
 .tang,
 .koral-bl,
 .pink-koral,
@@ -442,6 +444,16 @@ body {
 
 
 
+.guldfisk,
+.barbie-fisk,
+.blue-fisk,
+.sohest,
+.stribetfisk,
+.dory-fisk {
+  position: absolute;
+  cursor: pointer;
+  z-index: 20;
+}
 
 
 
