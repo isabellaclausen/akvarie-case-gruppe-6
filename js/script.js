@@ -64,7 +64,7 @@ function makeFollowTooltip(animalId, tooltipId, offsetY = 100) {
 
 
 
-// her vælger du hvilke dyr/fisk der skal have talebobler
+// her vælger du hvilke dyr/fisk der skal have talebobler//
 makeFollowTooltip("sohest", "sohestTooltip", 100);
 makeFollowTooltip("guldfisk", "guldfiskTooltip", 100);
 makeFollowTooltip("blue-fisk", "blueFiskTooltip", 100);
@@ -72,6 +72,7 @@ makeFollowTooltip("stribet-fisk", "stribetFiskTooltip", 100);
 makeFollowTooltip("barbie-fisk", "barbieFiskTooltip", 100);
 makeFollowTooltip("dory-fisk", "doryFiskTooltip", 100);
 makeFollowTooltip("haj", "hajFiskTooltip", 100);
+makeFollowTooltip("nemo", "nemoTooltip", 100);
 
 
 
