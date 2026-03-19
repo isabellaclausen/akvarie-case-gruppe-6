@@ -41,13 +41,35 @@ body {
 
 @keyframes haj {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) translateY(0) rotate(0deg);
   }
+
+  25% {
+    transform: translateX(-25vw) translateY(0) rotate(0deg);
+  }
+
+  45% {
+    transform: translateX(-45vw) translateY(0) rotate(0deg);
+  }
+
+  /* DYKKER NED I MIDTEN */
+  55% {
+    transform: translateX(-55vw) translateY(120px) rotate(8deg);
+  }
+
+  /* DYKKER OP IGEN */
+  65% {
+    transform: translateX(-65vw) translateY(-80px) rotate(-6deg);
+  }
+
+  80% {
+    transform: translateX(-80vw) translateY(10px) rotate(2deg);
+  }
+
   100% {
-    transform: translateX(calc(-100vw - 300px));
+    transform: translateX(calc(-100vw - 300px)) translateY(0) rotate(0deg);
   }
 }
-
 /* Krabben - bevares */
 .krabbe {
   position: absolute;
