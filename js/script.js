@@ -94,7 +94,7 @@ makeFollowTooltip("nemo", "nemoTooltip", 100);
 // Sound til havfruen
 const gethavfrue = document.getElementById("havfrue-snakker");
 const soundhavfruesnakker = new Audio();
-soundhavfruesnakker.src = "../sound/hejsa-jeg-hedder-ariel.mp3";
+soundhavfruesnakker.src = "./sound/hejsa-jeg-hedder-ariel.mp3";
 
 /* Tjek om havfruen (gethavfrue) med ID attributten "havfrue-snakker" findes i DOM'en  */ 
 if (gethavfrue) {
@@ -106,7 +106,7 @@ if (gethavfrue) {
 // Sound til barbie fisk
 const getbarbie = document.getElementById("barbie-fisk");
 const soundbarbie = new Audio();
-soundbarbie.src = "../sound/sound-barbie.mp3";
+soundbarbie.src = "./sound/sound-barbie.mp3";
 
 if (getbarbie) {
   getbarbie.addEventListener("click", () => {
@@ -120,7 +120,7 @@ if (getbarbie) {
 const getguldfisk = document.getElementById("guldfisk");
 /* Opretter lydobjekter */
 const soundguldfisk = new Audio();
-soundguldfisk.src ="../sound/sound-guldfisk.mp3";
+soundguldfisk.src ="./sound/sound-guldfisk.mp3";
 
 if (getguldfisk) {
     getguldfisk.addEventListener("click", ()=> {
@@ -133,7 +133,7 @@ if (getguldfisk) {
 const getstribetfisk = document.getElementById("stribet-fisk");
 /* Opretter lydobjekter */
 const soundstribetfisk = new Audio();
-soundstribetfisk.src ="../sound/stribet-fisk.mp3";
+soundstribetfisk.src ="./sound/stribet-fisk.mp3";
 if (getstribetfisk) {
     getstribetfisk.addEventListener("click", ()=> {
         soundstribetfisk.play();
@@ -145,7 +145,7 @@ if (getstribetfisk) {
 const getdory = document.getElementById("dory-fisk");
 /* Opretter lydobjekter */
 const sounddoryfisk = new Audio();
-sounddoryfisk.src ="../sound/sound-dory.mp3";
+sounddoryfisk.src ="./sound/sound-dory.mp3";
 
 if (getdory) {
     getdory.addEventListener("click", ()=> {
@@ -158,7 +158,7 @@ if (getdory) {
 const getsohest = document.getElementById("sohest");
 /* Opretter lydobjekter */
 const soundsohest = new Audio();
-soundsohest.src ="../sound/sound-sohest.mp3";
+soundsohest.src ="./sound/sound-sohest.mp3";
 
 if (getsohest) {
     getsohest.addEventListener("click", ()=> {
@@ -171,7 +171,7 @@ if (getsohest) {
 const getnemo = document.getElementById("nemo");
 /* Opretter lydobjekter */
 const soundnemo = new Audio();
-soundnemo.src ="../sound/sound-nemo.mp3";
+soundnemo.src ="./sound/sound-nemo.mp3";
 
 if (getnemo) {
     getnemo.addEventListener("click", ()=> {
@@ -184,7 +184,7 @@ if (getnemo) {
 const gethaj = document.getElementById("haj");
 /* Opretter lydobjekter */
 const soundhaj = new Audio();
-soundhaj.src ="../sound/sound-haj.mp3";
+soundhaj.src ="./sound/sound-haj.mp3";
 
 if (gethaj) {
     gethaj.addEventListener("click", ()=> {
@@ -197,7 +197,7 @@ if (gethaj) {
 const getkrabbe = document.getElementById("krabbe");
 /* Opretter lydobjekter */
 const soundkrabbe = new Audio();
-soundkrabbe.src ="../sound/sound-krabbe.mp3";
+soundkrabbe.src ="./sound/sound-krabbe.mp3";
 
 if (getkrabbe) {
     getkrabbe.addEventListener("click", ()=> {
@@ -210,7 +210,7 @@ if (getkrabbe) {
 const getblafisk = document.getElementById("blue-fisk");
 /* Opretter lydobjekter */
 const soundblafisk = new Audio();
-soundblafisk.src ="../sound/sound-blafisk.mp3";
+soundblafisk.src ="./sound/sound-blafisk.mp3";
 
 if (getblafisk) {
     getblafisk.addEventListener("click", ()=> {
